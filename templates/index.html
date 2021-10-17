@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <!-- Enable responsiveness on mobile devices-->
+    <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+
+    <link rel="stylesheet" href="{{ get_url(path="colors-light.css", trailing_slash=false) }}">
+
+    {% if config.generate_rss %}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    {% endif %}
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="images/favicon-32x32.png") }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="images/favicon-16x16.png") }}">
+
+    {% block extra_head %}
+    {% endblock extra_head %}
+  </head>
+  <body>
+    <header id="header">
+      <h1><a href="{{ config.base_url }}">{{ config.title }}</a></h1>
+      <p>{{ config.description }}</p>
+        <img src="{{ get_url(path="images/banner.jpg", trailing_slash=false) }}", style = "width: 94%"/>
+    </header>
+    <div id="page">
+      <div id="sidebar">
+        {% block sidebar %}
+          {% if config.extra.site_menus %}
+          <nav>
+            <ul class="nav">
+              {% block sidebar_nav %}
+                {% for link in config.extra.site_menus %}
+                  <li>
+                    <a href="{{ link.url }}"><span>{{ link.name }}</span></a>
+                  </li>
+                {% endfor %}
+              {% endblock sidebar_nav %}
+            </ul>
+          </nav>
+          {% endif %}
+        {% endblock sidebar %}
+      </div>
+      <div id="content">
+        {% block content %}
+          {% if paginator.pages %}
+            {% set pages = paginator.pages %}
+          {% else %}
+            {% set pages = section.pages %}
+          {% endif %}
+          {% for page in pages %}
+            <article class="post">
+              <h1><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
+              {% if page.summary %}
+                <div class="post-content">
+                  {{ page.summary | safe }}
+                  <nav class="readmore"><a itemprop="url" href="{{ page.permalink | safe }}">Lire plus&nbsp;&raquo;</a></nav>
+                </div>
+              {% endif %}
+              <p class="meta">Posté le <span class="postdate">{{ page.date | date(format="%d/%m/%Y") }}</span></p>
+            </article>
+          {% endfor %}
+          {% block pagination %}
+            {% if paginator.previous or paginator.next %}
+              <nav class="pagination" role="pagination">
+                {% if paginator.previous %}
+                  <a class="newer-posts" href="{{ paginator.previous }}"><span aria-hidden="true">&larr;</span>Billets plus récents</a>
+                {% endif %}
+                <span class="page-number">Page {{ paginator.current_index }}/{{ paginator.number_pagers }}</span>
+                {% if paginator.next %}
+                  <a class="older-posts" href="{{ paginator.next }}">Billets plus anciens<span aria-hidden="true">&rarr;</span></a>
+                {% endif %}
+              </nav>
+            {% endif %}
+          {% endblock pagination %}
+        {% endblock content %}
+      </div>
+      <footer id="footer">
+        Toutes les images de ce site sont soumises au droit d'auteur.
+        <p class="copyright">
+          {% block copyright %}
+            <span>&copy; {{ now() | date(format="%Y") }} <a href="{{ get_url(path="", trailing_slash=false ) }}">{{ config.title }}</a></span>
+            <span>&middot;</span>
+            <a href="https://institut-polaire.fr/fr/">Institut Polaire Français</a>
+            <span>&middot;</span>
+            <a href="https://taaf.fr/">TAAF</a>
+            <span>&middot;</span>
+            {% endblock copyright %}
+        </p>
+        <p class="sources">
+          {% block sources %}
+            Code source sur <a href="https://www.getzola.org/">Git</a> 
+            <span>&middot;</span>
+            Propulsé par <a href="https://www.getzola.org/">Zola</a> 
+            <span>&middot;</span>
+            Thème <a href="https://github.com/hulufei/solar-theme-zola">Solar</a>.
+          {% endblock sources %}
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
