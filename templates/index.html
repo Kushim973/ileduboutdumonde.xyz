@@ -87,19 +87,18 @@
           {% block copyright %}
             <span>&copy; {{ now() | date(format="%Y") }} <a href="{{ get_url(path="", trailing_slash=false ) }}">{{ config.title }}</a></span>
             <span>&middot;</span>
-            <a href="https://institut-polaire.fr/fr/">Institut Polaire Français</a>
+            <a href="https://institut-polaire.fr/fr/" target="_blank">Institut Polaire Français</a>
             <span>&middot;</span>
-            <a href="https://taaf.fr/">TAAF</a>
-            <span>&middot;</span>
+            <a href="https://taaf.fr/" target="_blank">TAAF</a>
             {% endblock copyright %}
         </p>
         <p class="sources">
           {% block sources %}
-            Code source sur <a href="https://www.getzola.org/">Git</a> 
+            Code source disponible sur <a href="https://github.com/Kushim973/ileduboutdumonde.xyz" target="_blank">GitHub</a> 
             <span>&middot;</span>
-            Propulsé par <a href="https://www.getzola.org/">Zola</a> 
+            Propulsé par <a href="https://www.getzola.org/" target="_blank">Zola</a> 
             <span>&middot;</span>
-            Thème <a href="https://github.com/hulufei/solar-theme-zola">Solar</a>.
+            Thème <a href="https://github.com/hulufei/solar-theme-zola" target="_blank">Solar</a>.
           {% endblock sources %}
         </p>
       </footer>

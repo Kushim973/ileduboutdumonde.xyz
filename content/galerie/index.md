@@ -1,9 +1,9 @@
 +++
 title = "Galerie"
-date = 2021-09-16
+date = 2021-10-16
 +++
 
-Galerie des photos publiées sur ce blog.
+Ni plus ni moins que la galerie des photos publiées sur ce blog.
 
 <!-- more -->
 

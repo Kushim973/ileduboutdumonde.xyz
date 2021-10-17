@@ -1,2 +1,4 @@
 {% set image = resize_image(path=path, width=width, height=height, op=op) %}
-<img src="{{ image.url }}" />
+<a href="{{ get_url(path=path) }}" target="_blank">
+    <img src="{{ image.url }}" />
+</a>
