@@ -7,11 +7,12 @@
     <!-- Enable responsiveness on mobile devices-->
     <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+
 
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
-
-    <link rel="stylesheet" href="{{ get_url(path="colors-light.css", trailing_slash=false) }}">
+    <link href="{{ get_url(path="main.css", trailing_slash=false) }}" rel="stylesheet">
 
     {% if config.generate_rss %}
     <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
@@ -20,6 +21,17 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="images/favicon-32x32.png") }}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="images/favicon-16x16.png") }}">
 
+    <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
+    <script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
+    <script type="text/javascript" src="{{ get_url(path="search.js") }}"></script>
+    <script async src="{{ get_url(path="switch_themes.js") }}"></script>
+    <script>
+        let theme = localStorage.getItem("theme");
+        if (theme != null) {
+            document.documentElement.setAttribute("data-theme", theme);
+        }
+    </script>
+
     {% block extra_head %}
     {% endblock extra_head %}
   </head>
@@ -27,12 +39,18 @@
     <header id="header">
       <h1><a href="{{ config.base_url }}">{{ config.title }}</a></h1>
       <p>{{ config.description }}</p>
-        <img src="{{ get_url(path="images/banner.jpg", trailing_slash=false) }}", style = "width: 94%"/>
+      <img src="{{ get_url(path="images/banner.jpg", trailing_slash=false) }}", style = "width: 94%"/>
     </header>
     <div id="page">
       <div id="sidebar">
         {% block sidebar %}
           {% if config.extra.site_menus %}
+          <div class="search-container">
+              <input id="search" type="search" placeholder="🔎 Rechercher dans le site">
+              <div class="search-results">
+                  <div class="search-results__items"></div>
+              </div>
+          </div>
           <nav>
             <ul class="nav">
               {% block sidebar_nav %}
@@ -46,6 +64,10 @@
           </nav>
           {% endif %}
         {% endblock sidebar %}
+      </div>
+      <div class="theme-switch">
+        <div class="light-switch" onclick="toggle_lights()" title="Changer le thème"></div>
+        <div class="light-switch-reset" onclick="clear_theme_override()" title="Revenir au thème du système"></div>
       </div>
       <div id="content">
         {% block content %}

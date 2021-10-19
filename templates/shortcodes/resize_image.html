@@ -1,4 +1,5 @@
-{% set image = resize_image(path=path, width=width, height=height, op=op) %}
+{% set image = resize_image(path=path, width=width, height=height, op=op, author=author, date=date) %}
 <a href="{{ get_url(path=path) }}" target="_blank">
     <img src="{{ image.url }}" />
 </a>
+<center>&copy; {{date}} {{ author }} &middot; Institut polaire français &middot; TAAF</center>

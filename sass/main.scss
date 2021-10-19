@@ -1,3 +1,7 @@
+@import 'search';
+@import 'switch_theme';
+
+
 /*** Reset ***/
 html,
 body,
@@ -105,9 +109,91 @@ figure {
 	margin-bottom: 0.5em;
 	padding: 0.25em;
 }
-body {
-	line-height: 1.1;
+
+
+@mixin set-colors-light {
+	--body-background-color: #fdf6e3;
+	--body-color: #839496;
+	--selection-background: rgba(0, 0, 0, 0.05);
+	--a-color: #2aa198;
+	--a-border-color: #eee8d5;
+	--a-hover-background-color: #eee8d5;
+	--a-hover-border-color: #eee8d5;
+	--a-hover-color: #2aa198;
+	--hr-border-color: #eee8d5;
+	--hx-color: #cb4b16;
+	--h1-a-color: #cb4b16;
+	--h1-a-hover-background-color: #eee8d5;
+	--h1-a-hover-border-color: #eee8d5;
+	--article-h1-color: #2aa198;
+	--blockquote-border-color: #cb4b16;
+	--sidebar-background-color: transparent;
+	--sidebar-span-color: #2aa198;
+	--sidebar-span-background-color: #eee8d5;
+	--footer-border-color: #eee8d5;
+	--precode-background-color: #eee8d5;
+	--precode-color: #657b83;
+	--precode-border: 1px solid #d6ceb6;
+	--precode-border-radius: 3px 3px 3px 3px;
+	--precode-overflow: auto;
+	--precode-padding: 6px 10px;
+	--hljs-background: none;
 }
+
+@mixin set-colors-dark {
+	--body-background-color: #002a35;
+	--body-color: #839496;
+	--selection-background: rgba(255, 255, 255, 0.05);
+	--a-color: #2aa198;
+	--a-border-color: #073642;
+	--a-hover-background-color: #073642;
+	--a-hover-border-color: #073642;
+	--a-hover-color: #2aa198;
+	--hr-border-color: #073642;
+	--hx-color: #cb4b16;
+	--h1-a-color: #cb4b16;
+	--h1-a-hover-background-color: #073642;
+	--h1-a-hover-border-color: #073642;
+	--h1-a-hover-color: #cb4b16;
+	--article-h1-color: #2aa198;
+	--blockquote-border-color: #cb4b16;
+	--sidebar-background-color: transparent;
+	--sidebar-span-color: #2aa198;
+	--sidebar-span-background-color: #073642;
+	--footer-border-color: #073642;
+	--hljs-background: none;
+}
+
+body {
+    @include set-colors-light();
+}
+
+[data-theme="dark"] body {
+    @include set-colors-dark();
+}
+
+/* Styles for users who prefer dark mode at the OS level */
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+        @include set-colors-dark();
+    }
+    /* Override dark mode with light mode styles if the user decides to swap */
+    [data-theme="light"] body {
+        @include set-colors-light();
+    }
+}
+
+html,
+body {
+    color: var(--body-color);
+    background-color: var(--body-background-color);
+}
+
+::selection{
+	background: var(--selection-background);
+}
+
 ol,
 ul {
 	list-style: bullet;
@@ -140,13 +226,19 @@ body {
 
 a,
 a:active,
-a:visited {
+a:visited,
+a code {
 	text-decoration: none;
 	border-bottom: 1px solid #839496;
 	padding: 2px 4px;
+	color: var(--a-color);
+	border-color: var(--a-border-color);
 }
 a:hover {
 	color: #000000;
+	background-color: var(--a-hover-background-color);
+	border-color: var(--a-hover-border-color);
+	color: var(--a-hover-color);
 }
 
 p {
@@ -193,6 +285,7 @@ blockquote {
 	font-size: 1.2em;
 	font-style: italic;
 	line-height: 1.5em;
+	border-color: var(--blockquote-border-color);
 }
 
 acronym,
@@ -203,23 +296,41 @@ abbr {
 
 hr {
 	border: 1px solid #000000;
+	border-color: var(--hr-border-color);
 }
 
 h1 {
 	font-size: 17px;
 	margin: 0 0 10px 0;
+	color: var(--hx-color);
 }
+
+h1 a,
+h1 a:visited,
+h1 a:active {
+	color: var(--h1-a-color);
+}
+
+h1 a:hover {
+	background-color: var(--h1-a-hover-background-color);
+	border-color: var(--h1-a-hover-border-color);
+	color: var(--h1-a-hover-color);
+}
+
 h2 {
 	font-size: 15px;
 	margin: 0 0 10px 0;
+	color: var(--hx-color);
 }
 h3 {
 	font-size: 14px;
 	margin: 0 0 10px 0;
+	color: var(--hx-color);
 }
 h3 {
 	font-size: 13px;
 	margin: 0 0 10px 0;
+	color: var(--hx-color);
 }
 
 /*** Useful Classes ***/
@@ -339,8 +450,18 @@ h3 {
 	padding: 0;
 }
 
+#sidebar a:hover {
+	background-color: var(--sidebar-background-color);
+}
+
+
 #sidebar a span {
 	padding: 2px 4px;
+}
+
+#sidebar a:hover span {
+	color: var(--sidebar-span-color);
+	background-color: var(--sidebar-span-background-color);
 }
 
 #sidebar .bio {
@@ -368,6 +489,7 @@ article h1 a {
 }
 article h1 a.anchor {
 	margin-left: 8px;
+	color: var(--article-h1-color);
 }
 
 article p {
@@ -420,6 +542,16 @@ pre code {
 	padding: 10px;
 	margin-top: 10px;
 	margin-bottom: 15px;
+	background-color: var(--precode-background-color);
+	color: var(--precode-color);
+	border: var(--precode-border);
+	border-radius: var(--precode-border-radius);
+	overflow: var(--precode-overflow);
+	padding: var(--precode-padding);
+}
+
+.hljs {
+	background: var(--hljs-background);
 }
 
 code[class*='language-'],
@@ -482,7 +614,9 @@ pre[class*='language-'] {
 		width: inherit;
 		padding-left: 10px;
 		padding-right: 10px;
+		border-color: var(--footer-border-color);
 	}
+
 
 	#header {
 		background-position: right 20px center;

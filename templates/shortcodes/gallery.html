@@ -1,13 +1,13 @@
 <div>
   <table>
-  {% for asset in page.assets -%}
-    {%- if asset is matching("[.](jpg|png)$") -%}
+  {% for asset in page.assets %}
+    {% if asset is matching("[.](jpg|png)$") %}
       {% set image = resize_image(path=asset, width=240, height=180) %}
       <td style = "padding: 15px"><a href="{{ get_url(path=asset) }}" target="_blank">
         <img src="{{ image.url }}" />
       </a></td>
-    {%- endif %}
-  {%- endfor %}
+    {% endif %}
+  {% endfor %}
   </table>
 </div>
 
