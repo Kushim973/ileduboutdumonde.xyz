@@ -44,25 +44,30 @@
     <div id="page">
       <div id="sidebar">
         {% block sidebar %}
-          {% if config.extra.site_menus %}
-          <div class="search-container">
-              <input id="search" type="search" placeholder="🔎 Rechercher dans le site">
-              <div class="search-results">
-                  <div class="search-results__items"></div>
-              </div>
+        <div class="search-container">
+          <input id="search" type="search" placeholder="🔎 Rechercher dans le site">
+          <div class="search-results">
+            <div class="search-results__items"></div>
           </div>
-          <nav>
-            <ul class="nav">
-              {% block sidebar_nav %}
-                {% for link in config.extra.site_menus %}
-                  <li>
-                    <a href="{{ link.url }}"><span>{{ link.name }}</span></a>
-                  </li>
-                {% endfor %}
-              {% endblock sidebar_nav %}
-            </ul>
-          </nav>
-          {% endif %}
+        </div>
+        <nav>
+          <ul class="nav">
+            {% block sidebar_nav %}
+            <li>
+              <a href="{{ get_url(path="", trailing_slash=false) }}">Accueil</a>
+              <a href="{{ get_url(path="/about", trailing_slash=false) }}">À propos</a>
+              <a href="{{ get_url(path="icos", trailing_slash=true) }}">Parlons science</a>
+              <a href="{{ get_url(path="/starting", trailing_slash=true) }}">Préambule</a>
+              <a href="{{ get_url(path="/mdf", trailing_slash=true) }}">À bord du Marion</a>
+              <a href="{{ get_url(path="/base", trailing_slash=true) }}">Vie en station</a>
+              <a href="{{ get_url(path="/people", trailing_slash=true) }}">Portraits</a>
+              <a href="{{ get_url(path="/galerie", trailing_slash=false) }}">Galerie</a>
+              <a href="{{ get_url(path="/lexique", trailing_slash=false) }}">Lexique taafien</a>
+              <a href="{{ get_url(path="/contact", trailing_slash=false) }}">Me contacter</a>
+            </li>
+            {% endblock sidebar_nav %}
+          </ul>
+        </nav>
         {% endblock sidebar %}
       </div>
       <div class="theme-switch">

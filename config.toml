@@ -1,6 +1,6 @@
 
 # The URL the site will be built for
-base_url = "ileduboutdumonde.xyz"
+base_url = "https://www.ileduboutdumonde.xyz"
 
 title = "Ile du Bout du Monde"
 description = "Un hivernage sur l'Île d'Amsterdam"
@@ -39,16 +39,4 @@ include_content = true
 [extra]
 # Put all your custom variables here
 
-site_menus = [
-  { url = "http://127.0.0.1:1111/", name = "Accueil" },
-  { url = "http://127.0.0.1:1111/about", name = "À propos" },
-  { url = "http://127.0.0.1:1111/icos/", name = "Parlons science" },
-  { url = "http://127.0.0.1:1111/starting/", name = "Préparatifs" },
-  { url = "http://127.0.0.1:1111/mdf/", name = "À bord du Marion" },
-  { url = "http://127.0.0.1:1111/base/", name = "Vie en station" },
-  { url = "http://127.0.0.1:1111/people/", name = "Portraits" },
-  { url = "http://127.0.0.1:1111/galerie", name = "Galerie" },
-  { url = "http://127.0.0.1:1111/lexique", name = "Lexique taafien" },
-  { url = "http://127.0.0.1:1111/contact", name = "Me contacter" },
-]
 
