@@ -3,6 +3,7 @@ title = "Lexique Taafien"
 date = 2021-10-17
 +++
 
+{{ image_apercu(path="lexique/images/vue_ile.jpg", width=500, height=150, quality=100) }}
 
 Les TAAF possèdent leur propre langue. On y retrouve beaucoup d'acronymes, de diminutifs, de petits surnoms...
 Ce lexique vous aidera, je l'espère, à y voir plus clair.

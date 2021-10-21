@@ -1,0 +1,4 @@
+{% set image = resize_image(path=path, width=width, height=height, quality=quality) %}
+<a style="padding: 0 0 0 0;" href="{{ page.permalink }}">
+    <img src="{{ image.url }}" />
+</a>

@@ -2,6 +2,8 @@ function toggle_lights() {
   if (document.documentElement.getAttribute("data-theme") === "dark") {
     set_theme("light")
   } else if (document.documentElement.getAttribute("data-theme") === "light") {
+    set_theme("gray")
+  } else if (document.documentElement.getAttribute("data-theme") === "gray") {
     set_theme("dark")
   } else {
     set_theme(window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "dark")

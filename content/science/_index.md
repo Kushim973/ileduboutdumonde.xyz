@@ -12,5 +12,3 @@ template = "index.html"
 [extra]
 author = "Romane Nespoulet"
 +++
-
-Page en construction...

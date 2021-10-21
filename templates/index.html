@@ -7,7 +7,7 @@
     <!-- Enable responsiveness on mobile devices-->
     <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
-    <meta name="color-scheme" content="light dark">
+    <meta name="color-scheme" content="light dark gray">
 
 
     <title>{% block title %}{{ config.title }}{% endblock title %}</title>
@@ -37,8 +37,24 @@
   </head>
   <body>
     <header id="header">
-      <h1><a href="{{ config.base_url }}">{{ config.title }}</a></h1>
-      <p>{{ config.description }}</p>
+      <table style = "width: 94%">
+        <tr>
+          <td>
+            <h1><a href="{{ config.base_url }}">{{ config.title }}</a></h1>
+          </td>
+          <td rowspan="2", style = "vertical-align: middle; text-align: right; margin-top: 0;margin-bottom: 0;">
+            <img src="{{ get_url(path="images/logo_ipev_main-128x128.png", trailing_slash=false) }}"/>
+          </td>
+          <td rowspan="2", style = "vertical-align: middle; text-align: right;"">
+            <img src="{{ get_url(path="images/logo_taaf_main-128x128.png", trailing_slash=false) }}"/>
+          </td>
+        </tr>
+        <tr>
+          <td style = "vertical-align: top; padding-left: 50px;">
+            <p class="sous-titre">{{ config.description }}</p>
+          </td>
+        </tr>
+      </table>
       <img src="{{ get_url(path="images/banner.jpg", trailing_slash=false) }}", style = "width: 94%"/>
     </header>
     <div id="page">
@@ -56,7 +72,7 @@
             <li>
               <a href="{{ get_url(path="", trailing_slash=false) }}">Accueil</a>
               <a href="{{ get_url(path="about", trailing_slash=false) }}">À propos</a>
-              <a href="{{ get_url(path="icos", trailing_slash=true) }}">Parlons Science</a>
+              <a href="{{ get_url(path="science", trailing_slash=true) }}">Parlons Science</a>
               <a href="{{ get_url(path="starting", trailing_slash=true) }}">Préambule</a>
               <a href="{{ get_url(path="mdf", trailing_slash=true) }}">À bord du Marion</a>
               <a href="{{ get_url(path="base", trailing_slash=true) }}">Vie en station</a>

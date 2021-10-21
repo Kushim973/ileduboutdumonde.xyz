@@ -1,16 +1,10 @@
 +++
 sort_by = "date"
-paginate_by = 0
+paginate_by = 4
 lang = "fr"
-
-paginate_reversed = true
-
-transparent = true
 
 template = "index.html"
 
 [extra]
 author = "Romane Nespoulet"
 +++
-
-Page en construction...

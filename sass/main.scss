@@ -1,7 +1,3 @@
-@import 'search';
-@import 'switch_theme';
-
-
 /*** Reset ***/
 html,
 body,
@@ -111,6 +107,35 @@ figure {
 }
 
 
+@mixin set-colors-gray {
+	--body-background-color: #222;
+	--body-color: #839496;
+	--selection-background: rgba(255, 255, 255, 0.05);
+	--a-color: #2aa198;
+	--a-border-color: #2b2b2b;
+	--a-hover-background-color: #2b2b2b;
+	--a-hover-border-color: #2b2b2b;
+	--a-hover-color: #2aa198;
+	--hr-border-color: #2b2b2b;
+	--hx-color: #cb4b16;
+	--h1-a-color: #cb4b16;
+	--h1-a-hover-background-color: #2b2b2b;
+	--h1-a-hover-border-color: #2b2b2b;
+	--article-h1-color: #2aa198;
+	--blockquote-border-color: #cb4b16;
+	--sidebar-background-color: transparent;
+	--sidebar-span-color: #2aa198;
+	--sidebar-span-background-color: #2b2b2b;
+	--footer-border-color: #2b2b2b;
+	--hljs-background: none;
+	--search-bar-background: #222;
+	--search-bar-color: #839496;
+	--input-bar-color: white;
+	--results-bar-background-color: #fdf6e3;
+	--results-bar-color: black;
+}
+
+
 @mixin set-colors-light {
 	--body-background-color: #fdf6e3;
 	--body-color: #839496;
@@ -138,6 +163,11 @@ figure {
 	--precode-overflow: auto;
 	--precode-padding: 6px 10px;
 	--hljs-background: none;
+	--search-bar-background: #fdf6e3;
+	--search-bar-color:  #839496;
+	--input-bar-color: black;
+	--results-bar-background-color: #002a35;
+	--results-bar-color: white;
 }
 
 @mixin set-colors-dark {
@@ -162,6 +192,11 @@ figure {
 	--sidebar-span-background-color: #073642;
 	--footer-border-color: #073642;
 	--hljs-background: none;
+	--search-bar-background: #002a35;
+	--search-bar-color: #839496;
+	--input-bar-color: white;
+	--results-bar-background-color: #fdf6e3;
+	--results-bar-color: black;
 }
 
 body {
@@ -170,6 +205,10 @@ body {
 
 [data-theme="dark"] body {
     @include set-colors-dark();
+}
+
+[data-theme="gray"] body {
+    @include set-colors-gray();
 }
 
 /* Styles for users who prefer dark mode at the OS level */
@@ -182,6 +221,9 @@ body {
     [data-theme="light"] body {
         @include set-colors-light();
     }
+    [data-theme="gray"] body {
+    @include set-colors-gray();
+	}
 }
 
 html,
@@ -305,6 +347,12 @@ h1 {
 	color: var(--hx-color);
 }
 
+.sous-titre {
+	font-size: 25px;
+	margin: 0 0 10px 0;
+	color: var(--body-color);
+}
+
 h1 a,
 h1 a:visited,
 h1 a:active {
@@ -422,7 +470,7 @@ h3 {
 	margin: 20px auto;
 	padding-top: 10px;
 	font-size: 0.85em;
-	border-top: 1px solid #073642;
+	border-top: 1px solid var(--footer-border-color);
 }
 
 #content {
@@ -760,4 +808,185 @@ pre[class*='language-'] {
 }
 .token.entity {
 	cursor: help;
+}
+
+/* Search bar */
+
+.search-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    border-color: #2aa198;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    background: var(--search-bar-background);
+    color: var(--input-bar-color);
+  }
+  ::placeholder {
+  	color: var(--search-bar-color);
+  }
+}
+
+.search-results {
+  display: none;
+  position: absolute;
+
+  background:var(--results-bar-background-color);
+  color: var(--results-bar-color);
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.5);
+  max-height: 500px;
+  overflow: auto;
+  width: 100%;
+  right: 10;
+  border-color: black;
+
+  &__items {
+    list-style: none;
+  }
+
+  li {
+    margin-top: 1rem;
+    border-bottom: 1px solid #2aa198;
+    font-size: 0.9rem;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+
+    a {
+      font-size: 1.2rem;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+/* Manual switch between dark and light mode */
+
+.theme-switch {
+    margin-bottom: 1rem;
+
+    @media (min-width: 80rem) {
+        position: fixed;
+        left: 2rem;
+        bottom: 2rem;
+        margin-bottom: 0rem;
+    }
+}
+
+.light-switch {
+    @mixin light-switch-gray {
+        // icon: https://icons.getbootstrap.com/icons/moon-fill/ (MIT licensed)
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff9' class='bi bi-moon' viewBox='0 0 16 16'%3E%3Cpath d='M14.53 10.53a7 7 0 0 1-9.058-9.058A7.003 7.003 0 0 0 8 15a7.002 7.002 0 0 0 6.53-4.47z'/%3E%3C/svg%3E");
+    }
+
+    @mixin light-switch-dark {
+        // icon: https://icons.getbootstrap.com/icons/brightness-high-fill/ (MIT licensed)
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ff9' class='bi bi-brightness-high-fill' viewBox='0 0 16 16'%3E%3Cpath d='M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z'/%3E%3C/svg%3E");
+    }
+
+    @mixin light-switch-light {
+        // icon: https://icons.getbootstrap.com/icons/stars/ (MIT licensed)
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23004' class='bi bi-stars' viewBox='0 0 16 16'%3E%3Cpath d='M7.657 6.247c.11-.33.576-.33.686 0l.645 1.937a2.89 2.89 0 0 0 1.829 1.828l1.936.645c.33.11.33.576 0 .686l-1.937.645a2.89 2.89 0 0 0-1.828 1.829l-.645 1.936a.361.361 0 0 1-.686 0l-.645-1.937a2.89 2.89 0 0 0-1.828-1.828l-1.937-.645a.361.361 0 0 1 0-.686l1.937-.645a2.89 2.89 0 0 0 1.828-1.828l.645-1.937zM3.794 1.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387A1.734 1.734 0 0 0 4.593 5.69l-.387 1.162a.217.217 0 0 1-.412 0L3.407 5.69A1.734 1.734 0 0 0 2.31 4.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387A1.734 1.734 0 0 0 3.407 2.31l.387-1.162zM10.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732L9.1 2.137a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L10.863.1z'/%3E%3C/svg%3E");
+    }
+
+    display: inline-block;
+    @include light-switch-light();
+
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    opacity: 0.6;
+
+    &:hover {
+        transform: scale(1.3);
+        transition: 200ms ease-out;
+        opacity: 1;
+    }
+
+    [data-theme="dark"] & {
+        @include light-switch-dark();
+    }
+
+    [data-theme="gray"] & {
+            @include light-switch-gray();
+        }
+
+    @media (prefers-color-scheme: dark) {
+        @include light-switch-dark();
+
+        [data-theme="light"] & {
+            @include light-switch-light();
+        }
+
+        [data-theme="gray"] & {
+            @include light-switch-gray();
+        }
+    }
+}
+
+/* Clear theme override and go back to system theme */
+
+.light-switch-reset {
+    @mixin light-switch-reset-light {
+        // icon: https://icons.getbootstrap.com/icons/x-circle-fill/ (MIT licensed)
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23666' class='bi bi-x-circle' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3E%3Cpath d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    }
+
+    @mixin light-switch-reset-dark {
+        // icon: https://icons.getbootstrap.com/icons/x-circle-fill/ (MIT licensed)
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23999' class='bi bi-x-circle' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3E%3Cpath d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    }
+
+    @mixin light-switch-reset-gray {
+        // icon: https://icons.getbootstrap.com/icons/x-circle-fill/ (MIT licensed)
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23999' class='bi bi-x-circle' viewBox='0 0 16 16'%3E%3Cpath d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3E%3Cpath d='M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    }
+
+    @include light-switch-reset-light();
+    vertical-align: bottom;
+    margin-left: 0.5rem;
+    background-repeat: no-repeat;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    opacity: 0.6;
+
+    display: none;
+    [data-theme="light"] & {
+        display: inline-block;
+    }
+    [data-theme="dark"] & {
+        @include light-switch-reset-dark();
+        display: inline-block;
+    }
+
+    [data-theme="gray"] & {
+        @include light-switch-reset-gray();
+        display: inline-block;
+    }
+
+    @media (min-width: 80rem) {
+        position: fixed;
+        left: 4.5rem;
+        bottom: 2rem;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 200ms ease-out;
+        opacity: 1;
+    }
 }
