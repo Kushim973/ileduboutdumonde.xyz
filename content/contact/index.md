@@ -20,7 +20,7 @@ Vous pouvez me contacter à tout moment sur mon adresse Gmail :
 [![Mail GMAIL](/images/gmail_icon-64x64.png "envoyer un mail sur gmail")](mailto:romane.nespoulet%40gmail%2Ecom)
 
 
-Pendant ma mission, préférez mon adresse de l'IPEV :
+Pendant ma mission, à cause du faible débit sur mon caillou, préférez mon adresse dédiée :
 
 
 [![Mail IPEV](/images/ipev_icon-64x64.png "envoyer un mail sur IPEV")](mailto:romane.nespoulet%40amsterdam%2Eipev%2Efr)
@@ -28,11 +28,25 @@ Pendant ma mission, préférez mon adresse de l'IPEV :
 
 ## Par courrier
 
+Je peux recevoir des lettres et des colis ! Voici mon adresse en station :
+
 <center><strong>Mme NESPOULET Romane <br>
 Base Martin de Vivies <br>
 District de Saint Paul et Amsterdam <br>
 Terres Australes et Antarctiques Françaises <br>
 Via 97408 St DENIS MESSAGERIE RÉUNION</center></strong><br>
+
+Cependant notez que le [Marion](/lexique) ne passe que 4 fois par an. Pour s'assurer des meilleurs délais de réception de vos petits (et gros) colis, il faut viser les dates d'[OP](/lexique) (OP1, OP2, OP3, OP4). Voici le planning des prochaines OP à venir (date de départ du bateau de la Réunion) :
+
+* **OP3** : 29 Octobre 2021
+* **OP4** : 30 Novembre 2021
+* **OP1** : début Mars 2022
+* **OP2** : début Août 2022
+* **OP3** : fin Octobre 2022
+
+L’idéal est d’expédier 3 semaines avant depuis la France métropolitaine. Trop tôt, le colis risque d'être oublié au fond d'un entrepôt, trop tard, le colis risque de louper le bateau et n'être expédié qu'à l'OP suivante. A affranchir pour La Réunion (le tri est de toute façon fait à La Réunion donc ne payez pas plus cher pour l'affranchissement dans les TAAF).
+
+**ATTENTION** : il ne faut surtout pas faire de recommandé ou d’envoi avec remise contre signature car il n’y a personne pour signer. Et il ne faut surtout pas utiliser Chronopost.
 
 ## Par téléphone
 
