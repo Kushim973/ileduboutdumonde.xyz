@@ -26,6 +26,7 @@ Disams             | Chef de district d'Amsterdam                               
 DZ                 | Drop Zone (héliport)                                                           |
 Gener              | Logisticien de la station (informaticien & électronicien)                      |
 Géophy             | Bâtiment où se trouvent les labos et les bureaux des VSC                       |
+GIP                | Groupement d'Intérêts Publics (l'IPEV en est un)                               |
 GP                 | Gérant Postal, le postier d'chez nous !                                        |
 Infra              | L'ensemble des corps de métiers responsables des infrastructures               |
 IPEV               | Institut Polaire Français (Paul-Émile Victor)                                  |

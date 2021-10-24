@@ -263,7 +263,7 @@ iframe {
 /*** Basics ***/
 body {
 	font-family: Verdana, Sans-Serif;
-	font-size: 13px;
+	font-size: 15.5px;
 	line-height: 1.7;
 }
 
@@ -343,7 +343,7 @@ hr {
 }
 
 h1 {
-	font-size: 17px;
+	font-size: 10px;
 	margin: 0 0 10px 0;
 	color: var(--hx-color);
 }
@@ -367,17 +367,12 @@ h1 a:hover {
 }
 
 h2 {
+	font-size: 17px;
+	margin: 0 0 10px 0;
+	color: var(--hx-color);
+}
+h3 {
 	font-size: 15px;
-	margin: 0 0 10px 0;
-	color: var(--hx-color);
-}
-h3 {
-	font-size: 14px;
-	margin: 0 0 10px 0;
-	color: var(--hx-color);
-}
-h3 {
-	font-size: 13px;
 	margin: 0 0 10px 0;
 	color: var(--hx-color);
 }
@@ -470,7 +465,7 @@ h3 {
 	width: 500px;
 	margin: 20px auto;
 	padding-top: 10px;
-	font-size: 0.85em;
+	font-size: 14px;
 	border-top: 1px solid var(--footer-border-color);
 }
 
@@ -495,7 +490,7 @@ h3 {
 #sidebar a {
 	border: none;
 	display: block;
-	font-size: 1.2em;
+	font-size: 16px;
 	padding: 0;
 }
 
@@ -530,7 +525,7 @@ article {
 }
 
 article h1 {
-	font-size: 17px;
+	font-size: 19px;
 	margin: 0 0 10px 0;
 }
 article h1 a {
@@ -690,6 +685,7 @@ pre[class*='language-'] {
 
 	#sidebar nav ul li {
 		display: inline;
+
 	}
 
 	#sidebar a {

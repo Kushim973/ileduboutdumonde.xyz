@@ -44,9 +44,11 @@ Cependant notez que le [Marion](/lexique) ne passe que 4 fois par an. Pour s'ass
 * **OP2** : début Août 2022
 * **OP3** : fin Octobre 2022
 
-L’idéal est d’expédier 3 semaines avant depuis la France métropolitaine. Trop tôt, le colis risque d'être oublié au fond d'un entrepôt, trop tard, le colis risque de louper le bateau et n'être expédié qu'à l'OP suivante. A affranchir pour La Réunion (le tri est de toute façon fait à La Réunion donc ne payez pas plus cher pour l'affranchissement dans les TAAF).
+L’idéal est d’expédier 3 semaines avant depuis la France métropolitaine. Trop tôt, le colis risque d'être oublié au fond d'un entrepôt, trop tard, le colis risque de louper le bateau et n'être expédié qu'à l'OP suivante. À affranchir pour La Réunion (le tri est de toute façon fait à La Réunion donc ne payez pas plus cher pour l'affranchissement dans les TAAF).
 
-**ATTENTION** : il ne faut surtout pas faire de recommandé ou d’envoi avec remise contre signature car il n’y a personne pour signer. Et il ne faut surtout pas utiliser Chronopost.
+**ATTENTION** : Ne pas utiliser Chronopost ou Colissimo. Et il ne faut surtout pas faire de recommandé ou d’envoi avec remise contre signature car il n’y a personne pour signer.
+
+**IMPORTANT** : Faites attention au contenu du colis ! Pas de produit périssable, pas de graine ou de plante invasive, et pensez à bien protéger l'intérieur du colis. Le transport est maritime et la livraison sur l'île par hélicoptère, autrement dit les colis sont soumis à rude épreuve !
 
 ## Par téléphone
 
