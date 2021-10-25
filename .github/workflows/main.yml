@@ -8,8 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: zola build
       - uses: actions/checkout@v2
+      - name: Install and Run Zola
+        run: |
+          sudo snap install --edge zola
+          zola build
       - name: rsync deployments
         uses: burnett01/rsync-deployments@5.1
         with:
