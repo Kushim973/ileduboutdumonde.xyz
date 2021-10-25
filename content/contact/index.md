@@ -31,7 +31,7 @@ Pendant ma mission, à cause du faible débit sur mon caillou, préférez mon ad
 Je peux recevoir des lettres et des colis ! Voici mon adresse en station :
 
 <center><strong>Mme NESPOULET Romane <br>
-Base Martin de Vivies <br>
+Base Martin de Viviès <br>
 District de Saint Paul et Amsterdam <br>
 Terres Australes et Antarctiques Françaises <br>
 Via 97408 St DENIS MESSAGERIE RÉUNION</center></strong><br>
