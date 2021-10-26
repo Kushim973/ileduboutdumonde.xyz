@@ -1,11 +1,16 @@
 <div>
-  {% for asset in page.assets %}
+  <script>$(function(){ $('#slider').anythingSlider(); });</script>
+  <ul id="slider">
+    {% for asset in page.assets %}
     {% if asset is matching("[.](jpg|png)$") %}
-      {% set image = resize_image(path=asset, width=240, height=180) %}
-      <a style="border-bottom: none;" href="{{ get_url(path=asset) }}" target="_blank">
-        <img style="display: inline; border-bottom: none; margin-bottom: 0;" src="{{ image.url }}" />
+    {% set image = resize_image(path=asset, width=800, height=400, op="fit", quality=100) %}
+    <li>
+      <a class="link-image" href="{{ get_url(path=asset) }}" target="_blank">
+        <img src="{{ image.url }}" />
       </a>
+    </li>
     {% endif %}
-  {% endfor %}
+    {% endfor %}
+  </ul>
 </div>
 

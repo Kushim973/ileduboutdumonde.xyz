@@ -1,6 +1,7 @@
 +++
 title = "Me contacter"
 date = 2021-10-19
+description = "Les différents moyens de me contacter"
 +++
 
 {{ image_apercu(path="contact/images/base.jpg", width=500, height=150, quality=100) }}

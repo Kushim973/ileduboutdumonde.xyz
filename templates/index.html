@@ -1,154 +1,184 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
 
-    <!-- Enable responsiveness on mobile devices-->
-    <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
-    <meta name="color-scheme" content="light dark gray">
+  <!-- Enable responsiveness on mobile devices-->
+  <!-- viewport-fit=cover is to support iPhone X rounded corners and notch in landscape-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light dark gray">
 
 
-    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
-    <link href="{{ get_url(path="main.css", trailing_slash=false) }}" rel="stylesheet">
+  <link href="{{ get_url(path="main.css", trailing_slash=false) }}" rel="stylesheet">
+  <link href="{{ get_url(path="anythingslider.css") }}" rel="stylesheet">
 
-    {% if config.generate_rss %}
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
-    {% endif %}
+  {% if config.generate_rss %}
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+  {% endif %}
 
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="images/favicon-32x32.png") }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="images/favicon-16x16.png") }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="images/favicon-32x32.png") }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="images/favicon-16x16.png") }}">
 
-    <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
-    <script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
-    <script type="text/javascript" src="{{ get_url(path="search.js") }}"></script>
-    <script async src="{{ get_url(path="switch_themes.js") }}"></script>
-    <script>
-        let theme = localStorage.getItem("theme");
-        if (theme != null) {
-            document.documentElement.setAttribute("data-theme", theme);
-        }
-    </script>
 
-    {% block extra_head %}
-    {% endblock extra_head %}
-  </head>
-  <body>
-    <header id="header">
-      <table style = "width: 94%">
-        <tr>
-          <td>
-            <h1><a href="{{ config.base_url }}">{{ config.title }}</a></h1>
-          </td>
-          <td rowspan="2", style = "vertical-align: middle; text-align: right; margin-top: 0;margin-bottom: 0;">
-            <a style="border-bottom: none; padding: 0px; border: none;" href="https://institut-polaire.fr/fr/" target="_blank">
-              <img src="{{ get_url(path="images/logo_ipev_main-128x128.png", trailing_slash=false) }}" alt="logo_ipev"/>
-            </a>
-          </td>
-          <td rowspan="2", style = "vertical-align: middle; text-align: right;">
-            <a style="border-bottom: none; padding: 0px; border: none;" href="https://taaf.fr/" target="_blank">
-              <img src="{{ get_url(path="images/logo_taaf_main-128x128.png", trailing_slash=false) }}" alt="logo_taaf"/>
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td style = "vertical-align: top; padding-left: 50px;">
-            <p class="sous-titre">{{ config.description }}</p>
-          </td>
-        </tr>
-      </table>
-      <img src="{{ get_url(path="images/banner.jpg", trailing_slash=false) }}", style = "width: 94%"/>
-    </header>
-    <div id="page">
-      <div id="sidebar">
-        {% block sidebar %}
-        <div class="search-container">
-          <input id="search" type="search" placeholder="🔎 Rechercher dans le site">
-          <div class="search-results">
-            <div class="search-results__items"></div>
-          </div>
-        </div>
-        <nav>
-          <ul class="nav">
-            {% block sidebar_nav %}
-            <li>
-              <a href="{{ get_url(path="", trailing_slash=false) }}">Accueil</a>
-              <a href="{{ get_url(path="about", trailing_slash=false) }}">À propos</a>
-              <a href="{{ get_url(path="starting", trailing_slash=true) }}">Préambule</a>
-              <a href="{{ get_url(path="science", trailing_slash=true) }}">Parlons Science</a>
-              <a href="{{ get_url(path="mdf", trailing_slash=true) }}">Sur le Marion</a>
-              <a href="{{ get_url(path="base", trailing_slash=true) }}">Vie en station</a>
-              <a href="{{ get_url(path="people", trailing_slash=true) }}">Portraits</a>
-              <a href="{{ get_url(path="galerie", trailing_slash=false) }}">Galerie</a>
-              <a href="{{ get_url(path="lexique", trailing_slash=false) }}">Lexique taafien</a>
-              <a href="{{ get_url(path="contact", trailing_slash=false) }}">Me contacter</a>
-            </li>
-            {% endblock sidebar_nav %}
-          </ul>
-        </nav>
-        {% endblock sidebar %}
-      </div>
-      <div class="theme-switch">
-        <div class="light-switch" onclick="toggle_lights()" title="Changer le thème"></div>
-        <div class="light-switch-reset" onclick="clear_theme_override()" title="Revenir au thème du système"></div>
-      </div>
-      <div id="content">
-        {% block content %}
-          {% if paginator.pages %}
-            {% set pages = paginator.pages %}
-          {% else %}
-            {% set pages = section.pages %}
-          {% endif %}
-          {% for page in pages %}
-            <article class="post">
-              <h1><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
-              {% if page.summary %}
-                <div class="post-content">
-                  {{ page.summary | safe }}
-                  <nav class="readmore"><a itemprop="url" href="{{ page.permalink | safe }}">Lire plus&nbsp;&raquo;</a></nav>
-                </div>
-              {% endif %}
-              <p class="meta">Posté le <span class="postdate">{{ page.date | date(format="%d/%m/%Y") }}</span></p>
-            </article>
-          {% endfor %}
-          {% block pagination %}
-            {% if paginator.previous or paginator.next %}
-              <nav class="pagination" role="pagination">
-                {% if paginator.previous %}
-                  <a class="newer-posts" href="{{ paginator.previous }}"><span aria-hidden="true">&larr;</span>Billets plus récents</a>
-                {% endif %}
-                <span class="page-number">Page {{ paginator.current_index }}/{{ paginator.number_pagers }}</span>
-                {% if paginator.next %}
-                  <a class="older-posts" href="{{ paginator.next }}">Billets plus anciens<span aria-hidden="true">&rarr;</span></a>
-                {% endif %}
-              </nav>
-            {% endif %}
-          {% endblock pagination %}
-        {% endblock content %}
-      </div>
-      <footer id="footer">
-        Toutes les images de ce site sont soumises au droit d'auteur.
-        <p class="copyright">
-          {% block copyright %}
-            <span>&copy; {{ now() | date(format="%Y") }} <a href="{{ get_url(path="", trailing_slash=false ) }}">{{ config.title }}</a></span>
-            <span>&middot;</span>
-            <a href="https://institut-polaire.fr/fr/" target="_blank">Institut Polaire Français</a>
-            <span>&middot;</span>
-            <a href="https://taaf.fr/" target="_blank">TAAF</a>
-            {% endblock copyright %}
-        </p>
-        <p class="sources">
-          {% block sources %}
-            Code source disponible sur <a href="https://github.com/Kushim973/ileduboutdumonde.xyz" target="_blank">GitHub</a> 
-            <span>&middot;</span>
-            Propulsé par <a href="https://www.getzola.org/" target="_blank">Zola</a> 
-            <span>&middot;</span>
-            Thème <a href="https://github.com/hulufei/solar-theme-zola" target="_blank">Solar</a>.
-          {% endblock sources %}
-        </p>
-      </footer>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
+  <script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
+  <script type="text/javascript" src="{{ get_url(path="search.js") }}"></script>
+  <script type="text/javascript" src="{{ get_url(path="jquery.anythingslider.min.js") }}"></script>
+
+  <script async src="{{ get_url(path="switch_themes.js") }}"></script>
+  <script>
+    let theme = localStorage.getItem("theme");
+    if (theme != null) {
+      document.documentElement.setAttribute("data-theme", theme);
+    }
+  </script>
+  <!--<script>
+    $(function(){
+     $('#slider')
+     .anythingSlider() // add any non-default options here
+   });
+ </script>-->
+ {% block extra_head %}
+ {% endblock extra_head %}
+</head>
+<body>
+  <header id="header">
+    <table style = "width: 94%">
+      <tr>
+        <td>
+          <h1><a href="{{ config.base_url }}">{{ config.title }}</a></h1>
+        </td>
+        <td class="td-masqued" rowspan="2">
+          <a class="link-image" href="https://institut-polaire.fr/fr/" target="_blank">
+            <img src="{{ get_url(path="images/logo_ipev_main-128x128.png", trailing_slash=false) }}" alt="logo_ipev"/>
+          </a>
+        </td>
+        <td class="td-masqued" rowspan="2">
+          <a class="link-image" href="https://taaf.fr/" target="_blank">
+            <img src="{{ get_url(path="images/logo_taaf_main-128x128.png", trailing_slash=false) }}" alt="logo_taaf"/>
+          </a>
+        </td>
+      </tr>
+      <tr>
+        <td style = "vertical-align: top; padding-left: 50px;">
+          <p class="sous-titre">{{ config.description }}</p>
+        </td>
+      </tr>
+    </table>
+    <table class="reveal">
+      <td class="td-header">
+          <a class="link-image" href="https://institut-polaire.fr/fr/" target="_blank">
+            <img src="{{ get_url(path="images/logo_ipev_main-64x64.png", trailing_slash=false) }}" alt="logo_ipev"/>
+          </a>
+        </td>
+        <td class="td-header">
+          <a class="link-image" href="https://taaf.fr/" target="_blank">
+            <img src="{{ get_url(path="images/logo_taaf_main-64x64.png", trailing_slash=false) }}" alt="logo_taaf"/>
+          </a>
+        </td>
+    </table>
+    <div class="theme-switch">
+      <div class="light-switch" onclick="toggle_lights()" title="Changer le thème"></div>
+      <div class="light-switch-reset" onclick="clear_theme_override()" title="Revenir au thème du système"></div>
     </div>
-  </body>
+    <img src="{{ get_url(path="images/banner.jpg", trailing_slash=false) }}", style = "width: 94%"/>
+  </header>
+  <div id="page">
+    <div id="sidebar">
+      {% block sidebar %}
+      <div class="search-container">
+        <input id="search" type="search" placeholder="🔎 Rechercher dans le site">
+        <div class="search-results">
+          <div class="search-results__items"></div>
+        </div>
+      </div>
+      <nav>
+        <ul class="nav">
+          {% block sidebar_nav %}
+            <li><a href="{{ get_url(path="", trailing_slash=false) }}">Accueil</a></li>
+            <span class="reveal">&middot;</span>
+            <li><a href="{{ get_url(path="about", trailing_slash=false) }}">À propos</a></li>
+            <span class="reveal">&middot;</span>
+            <li><a href="{{ get_url(path="starting", trailing_slash=true) }}">Préambule</a></li>
+            <span class="reveal">&middot;</span>
+            <li><a href="{{ get_url(path="science", trailing_slash=true) }}">Parlons Science</a></li>
+            <span class="reveal">&middot;</span>
+            <li><a href="{{ get_url(path="mdf", trailing_slash=true) }}">Sur le Marion</a></li>
+            <span class="reveal">&middot;</span>
+            <li><a href="{{ get_url(path="base", trailing_slash=true) }}">Vie en station</a></li>
+            <span class="reveal">&middot;</span>
+            <li><a href="{{ get_url(path="people", trailing_slash=true) }}">Portraits</a></li>
+            <span class="reveal">&middot;</span>
+            <li><a href="{{ get_url(path="galerie", trailing_slash=false) }}">Galerie</a></li>
+            <span class="reveal">&middot;</span>
+            <li><a href="{{ get_url(path="lexique", trailing_slash=false) }}">Lexique taafien</a></li>
+            <span class="reveal">&middot;</span>
+            <li><a href="{{ get_url(path="contact", trailing_slash=false) }}">Me contacter</a></li>
+          {% endblock sidebar_nav %}
+        </ul>
+      </nav>
+      {% endblock sidebar %}
+    </div>
+    
+    <div id="content">
+      {% block content %}
+      {% if paginator.pages %}
+      {% set pages = paginator.pages %}
+      {% else %}
+      {% set pages = section.pages %}
+      {% endif %}
+      {% for page in pages %}
+      <article class="post">
+        <h1><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
+        {% if page.summary %}
+        <div class="post-content">
+          {{ page.summary | safe }}
+          <nav class="readmore"><a itemprop="url" href="{{ page.permalink | safe }}">Lire la suite&nbsp;&raquo;</a></nav>
+        </div>
+        {% endif %}
+        <p class="meta">Posté le <span class="postdate">{{ page.date | date(format="%d/%m/%Y") }}</span></p>
+      </article>
+      {% endfor %}
+      {% block pagination %}
+      {% if paginator.previous or paginator.next %}
+      <nav class="pagination" role="pagination">
+        {% if paginator.previous %}
+        <a class="newer-posts" href="{{ paginator.previous }}"><span aria-hidden="true">&larr;</span>Articles plus récents</a>
+        {% endif %}
+        <span class="page-number">Page {{ paginator.current_index }}/{{ paginator.number_pagers }}</span>
+        {% if paginator.next %}
+        <a class="older-posts" href="{{ paginator.next }}">Articles plus anciens<span aria-hidden="true">&rarr;</span></a>
+        {% endif %}
+      </nav>
+      {% endif %}
+      {% endblock pagination %}
+      {% endblock content %}
+    </div>
+    <footer id="footer">
+      Toutes les images de ce site sont soumises au droit d'auteur.
+      <p class="copyright">
+        {% block copyright %}
+        <span>&copy; {{ now() | date(format="%Y") }} <a href="{{ get_url(path="", trailing_slash=false ) }}">{{ config.title }}</a></span>
+        <span>&middot;</span>
+        <a href="https://institut-polaire.fr/fr/" target="_blank">Institut Polaire Français</a>
+        <span>&middot;</span>
+        <a href="https://taaf.fr/" target="_blank">TAAF</a>
+        {% endblock copyright %}
+      </p>
+      <p class="sources">
+        {% block sources %}
+        Code source disponible sur <a href="https://github.com/Kushim973/ileduboutdumonde.xyz" target="_blank">GitHub</a> 
+        <span>&middot;</span>
+        Propulsé par <a href="https://www.getzola.org/" target="_blank">Zola</a> 
+        <span>&middot;</span>
+        Thème <a href="https://github.com/hulufei/solar-theme-zola" target="_blank">Solar</a>.
+        {% endblock sources %}
+      </p>
+    </footer>
+  </div>
+</body>
 </html>

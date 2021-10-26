@@ -284,6 +284,16 @@ a:hover {
 	color: var(--a-hover-color);
 }
 
+.link-image {
+	border-bottom: none;
+	padding: 0px; 
+	border: none;
+}
+
+.link-image:hover {
+	background-color: transparent;
+}
+
 p {
 	margin-bottom: 15px;
 	word-wrap: break-word;
@@ -438,6 +448,13 @@ h3 {
 	border: none;
 }
 
+.td-masqued {
+	vertical-align: middle; 
+	text-align: right; 
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
 #blog-logo img {
 	max-width: 484px;
 	height: auto;
@@ -501,6 +518,10 @@ h3 {
 
 #sidebar a span {
 	padding: 2px 4px;
+}
+
+.reveal {
+	display: none;
 }
 
 #sidebar a:hover span {
@@ -674,7 +695,7 @@ pre[class*='language-'] {
 	#sidebar {
 		position: relative;
 		text-align: left;
-		width: 100%;
+		width: 90%;
 		left: 0;
 		margin: 10px 10px 20px 10px;
 	}
@@ -688,6 +709,18 @@ pre[class*='language-'] {
 
 	}
 
+	.reveal {
+		display: inline;
+	}
+
+	.sous-titre {
+		font-size: 20px;
+	}
+
+	.td-header {
+		padding: 0px 50px 0px 50px;
+	}
+
 	#sidebar a {
 		display: inline;
 	}
@@ -698,6 +731,10 @@ pre[class*='language-'] {
 	}
 
 	#sidebar .bio {
+		display: none;
+	}
+
+	.td-masqued {
 		display: none;
 	}
 }
@@ -873,8 +910,9 @@ pre[class*='language-'] {
 
 .theme-switch {
     margin-bottom: 1rem;
+    z-index: 10;
 
-    @media (min-width: 80rem) {
+    @media (min-width: 870px) {
         position: fixed;
         left: 2rem;
         bottom: 2rem;
@@ -975,7 +1013,7 @@ pre[class*='language-'] {
         display: inline-block;
     }
 
-    @media (min-width: 80rem) {
+    @media (min-width: 870px) {
         position: fixed;
         left: 4.5rem;
         bottom: 2rem;
