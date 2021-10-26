@@ -1,6 +1,6 @@
 
 # The URL the site will be built for
-base_url = "http://1ileduboutdumonde.xyz"
+base_url = "https://ileduboutdumonde.xyz"
 
 title = "Ile du Bout du Monde"
 description = "Un hivernage sur l'Île d'Amsterdam"
