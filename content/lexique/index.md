@@ -1,6 +1,7 @@
 +++
 title = "Lexique Taafien"
 date = 2021-10-17
+
 +++
 
 {{ image_apercu(path="lexique/images/vue_ile.jpg", width=500, height=150, quality=100) }}
@@ -12,36 +13,36 @@ Ce lexique vous aidera, je l'espère, à y voir plus clair.
 
 Il sera complété au fur et à mesure de l'hivernage !
 
-__________________ | ___________________________________________________________                    |
-:-----------       | :-----------                                                                   |
-Ams                | District de Saint-Paul et Amsterdam                                            |
-Appro              | Bâtiment où l'on trouve les produits de première nécessité                     |
-Bibams             | Le petit surnom de notre médecin !                                             |
-Bonbon             | Jeune éléphant de mer                                                          |
-Cale (la)          | Le quai de débarquement de l'île (matériels et personnels)                     |
-CE                 | Campagne/Campagnard d'été : scientifique non hivernant                         |
-Coop               | Petite boutique où on peut acheter des goodies TAAF et de l'alcool             |
-Cro                | District de Crozet                                                             |
-Disams             | Chef de district d'Amsterdam                                                   |
-DZ                 | Drop Zone (héliport)                                                           |
-Gener              | Logisticien de la station (informaticien & électronicien)                      |
-Géophy             | Bâtiment où se trouvent les labos et les bureaux des VSC                       |
-GIP                | Groupement d'Intérêts Publics (l'IPEV en est un)                               |
-GP                 | Gérant Postal, le postier d'chez nous !                                        |
-Infra              | L'ensemble des corps de métiers responsables des infrastructures               |
-IPEV               | Institut Polaire Français (Paul-Émile Victor)                                  |
-Ker                | District de Kerguelen                                                          |
-Marion             | Marion Dufresne II, le navire ravitailleur                                     |
-Martin de Viviès   | Nom de la station du district d'Amsterdam                                      |
-OP                 | Opération Portuaire, une rotation complète du Marion                           |
-OPEA               | Chef des opérations lors d'une OP, c'est le big boss du Marion                 |
-Pacha              | Grand éléphant de mer mâle, régnant sur son harem                              |
-Pointe B           | Pointe Bénédicte, le QG des pompeurs d'air !                                   |
-Pompeur.se d'air   | Solène et moi ! Les VSC chimistes de l'atmosphère                              |
-Pup                | Jeune otarie                                                                   |
-Resnat             | Nos homologues, recrutés par la Réserve Naturelle des TAAF                     |
-TAAF               | Terres Australes et Antarctiques Françaises                                    |
-Touque             | Bidon plastique *waterproof* et *souris-proof* servant à stocker la nourriture |
-VSC                | Volontariat/Volontaire en Service Civique                                      |
-Zézette            | Radio VHF portable                                                             |
-__________________ | ___________________________________________________________                    |
+___________________                         | ___________________________________________________________                    |
+:-----------                                | :-----------                                                                   |
+<span id="ams">Ams</span>                   | District de Saint-Paul et Amsterdam                                            |
+<span id="appro">Appro</span>               | Bâtiment où l'on trouve les produits de première nécessité                     |
+<span id="bibams">Bibams</span>             | Le petit surnom de notre médecin !                                             |
+<span id="bonbon">Bonbon</span>             | Jeune éléphant de mer                                                          |
+<span id="cale">Cale (la)</span>            | Le quai de débarquement de l'île (matériels et personnels)                     |
+<span id="ce">CE</span>                     | Campagne/Campagnard d'été : scientifique non hivernant                         |
+<span id="coop">Coop</span>                 | Petite boutique où on peut acheter des goodies TAAF et de l'alcool             |
+<span id="cro">Cro</span>                   | District de Crozet                                                             |
+<span id="disams">Disams</span>             | Chef de district d'Amsterdam                                                   |
+<span id="dz">DZ</span>                     | Drop Zone (héliport)                                                           |
+<span id="gener">Gener</span>               | Logisticien de la station (informaticien & électronicien)                      |
+<span id="geophy">Géophy</span>             | Bâtiment où se trouvent les labos et les bureaux des VSC                       |
+<span id="gip">GIP</span>                   | Groupement d'Intérêt Public (l'IPEV en est un)                                 |
+<span id="gp">GP</span>                     | Gérant Postal, le postier d'chez nous !                                        |
+<span id="infra">Infra</span>               | L'ensemble des corps de métiers responsables des infrastructures               |
+<span id="ipev">IPEV</span>                 | Institut Polaire Français (Paul-Émile Victor)                                  |
+<span id="ker">Ker</span>                   | District de Kerguelen                                                          |
+<span id="marion">Marion</span>             | Marion Dufresne II, le navire ravitailleur                                     |
+<span id="martin">Martin de Viviès</span>   | Nom de la station du district d'Amsterdam                                      |
+<span id="op">OP</span>                     | Opération Portuaire, une rotation complète du Marion                           |
+<span id="opea">OPEA</span>                 | Chef des opérations lors d'une OP, c'est le big boss du Marion                 |
+<span id="pacha">Pacha</span>               | Grand éléphant de mer mâle, régnant sur son harem                              |
+<span id="pointeb">Pointe B</span>          | Pointe Bénédicte, le QG des pompeurs d'air !                                   |
+<span id="pompeurr">Pompeur.se d'air</span> | Solène et moi ! Les VSC chimistes de l'atmosphère                              |
+<span id="pup">Pup</span>                   | Jeune otarie                                                                   |
+<span id="resnat">Resnat</span>             | Nos homologues, recrutés par la Réserve Naturelle des TAAF                     |
+<span id="taaf">TAAF</span>                 | Terres Australes et Antarctiques Françaises                                    |
+<span id="touque">Touque</span>             | Bidon plastique *waterproof* et *souris-proof* servant à stocker la nourriture |
+<span id="vsc">VSC</span>                   | Volontariat/Volontaire en Service Civique                                      |
+<span id="zezette">Zézette</span>           | Radio VHF portable                                                             |
+___________________                         | ___________________________________________________________                    |

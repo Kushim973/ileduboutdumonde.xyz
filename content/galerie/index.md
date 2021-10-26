@@ -7,6 +7,6 @@ Ni plus ni moins que la galerie des photos publiées sur ce blog.
 
 <!-- more -->
 
-Cliquez pour les voir en taille réelle ;)
+Cliquez pour les voir en taille réelle :wink:
 
 {{ gallery() }}

@@ -17,13 +17,13 @@ Voici les différents moyens de me contacter.
 Vous pouvez me contacter à tout moment sur mon adresse Gmail :
 
 
-[![Mail GMAIL](/images/gmail_icon-64x64.png "envoyer un mail sur gmail")](mailto:romane.nespoulet%40gmail%2Ecom)
+[![Mail GMAIL](/images/gmail_icon-64x64.png "Envoyer un mail sur gmail")](mailto:romane.nespoulet%40gmail%2Ecom)
 
 
 Pendant ma mission, à cause du faible débit sur mon caillou, préférez mon adresse dédiée :
 
 
-[![Mail IPEV](/images/ipev_icon-64x64.png "envoyer un mail sur IPEV")](mailto:romane.nespoulet%40amsterdam%2Eipev%2Efr)
+[![Mail IPEV](/images/ipev_icon-64x64.png "Envoyer un mail sur IPEV")](mailto:romane.nespoulet%40amsterdam%2Eipev%2Efr)
 
 
 ## Par courrier
@@ -36,7 +36,7 @@ District de Saint Paul et Amsterdam <br>
 Terres Australes et Antarctiques Françaises <br>
 Via 97408 St DENIS MESSAGERIE RÉUNION</center></strong><br>
 
-Cependant notez que le [Marion](/lexique) ne passe que 4 fois par an. Pour s'assurer des meilleurs délais de réception de vos petits (et gros) colis, il faut viser les dates d'[OP](/lexique) (OP1, OP2, OP3, OP4). Voici le planning des prochaines OP à venir (date de départ du bateau de la Réunion) :
+Cependant notez que le [Marion](/lexique/#marion "Marion Dufresne II, le navire ravitailleur") ne passe que 4 fois par an. Pour s'assurer des meilleurs délais de réception de vos petits (et gros) colis, il faut viser les dates d'[OP](/lexique/#op "Opération Portuaire, une rotation du bateau") (OP1, OP2, OP3, OP4). Voici le planning des prochaines OP à venir (date de départ du bateau de la Réunion) :
 
 * **OP3** : 29 Octobre 2021
 * **OP4** : 30 Novembre 2021

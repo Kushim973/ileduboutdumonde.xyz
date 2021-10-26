@@ -43,10 +43,14 @@
             <h1><a href="{{ config.base_url }}">{{ config.title }}</a></h1>
           </td>
           <td rowspan="2", style = "vertical-align: middle; text-align: right; margin-top: 0;margin-bottom: 0;">
-            <img src="{{ get_url(path="images/logo_ipev_main-128x128.png", trailing_slash=false) }}"/>
+            <a style="border-bottom: none; padding: 0px; border: none;" href="https://institut-polaire.fr/fr/" target="_blank">
+              <img src="{{ get_url(path="images/logo_ipev_main-128x128.png", trailing_slash=false) }}" alt="logo_ipev"/>
+            </a>
           </td>
-          <td rowspan="2", style = "vertical-align: middle; text-align: right;"">
-            <img src="{{ get_url(path="images/logo_taaf_main-128x128.png", trailing_slash=false) }}"/>
+          <td rowspan="2", style = "vertical-align: middle; text-align: right;">
+            <a style="border-bottom: none; padding: 0px; border: none;" href="https://taaf.fr/" target="_blank">
+              <img src="{{ get_url(path="images/logo_taaf_main-128x128.png", trailing_slash=false) }}" alt="logo_taaf"/>
+            </a>
           </td>
         </tr>
         <tr>
@@ -74,7 +78,7 @@
               <a href="{{ get_url(path="about", trailing_slash=false) }}">À propos</a>
               <a href="{{ get_url(path="starting", trailing_slash=true) }}">Préambule</a>
               <a href="{{ get_url(path="science", trailing_slash=true) }}">Parlons Science</a>
-              <a href="{{ get_url(path="mdf", trailing_slash=true) }}">À bord du Marion</a>
+              <a href="{{ get_url(path="mdf", trailing_slash=true) }}">Sur le Marion</a>
               <a href="{{ get_url(path="base", trailing_slash=true) }}">Vie en station</a>
               <a href="{{ get_url(path="people", trailing_slash=true) }}">Portraits</a>
               <a href="{{ get_url(path="galerie", trailing_slash=false) }}">Galerie</a>
