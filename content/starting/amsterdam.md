@@ -1,6 +1,8 @@
 +++
 title = "Parlons un peu de mon île"
 date = 2021-10-25
+
+description = "Préambule"
 +++
 
 
@@ -31,7 +33,7 @@ Les deux îles se situent juste au dessus du 40e parallèle, et plus exactement 
 
 {{ resize_image(path="starting/images/StPaul_Map.png", width=650, height=520, op="fit", author="Varp - Wikipedia", date="2006", quality=100) }}
 
-D'une forme globalement ovale, l'île d'Amsterdam a une superficie de 58 km² (10 km de long, 7 km de large) et est entourée de falaises de 30 à 60 m de haut (point culminant : **Mont de la Dives, 881 m**). Les bateaux ne pouvant y accoster, c'est en hélicoptère que l'on y transporte le matériel et le personnel. Le seul accès à la mer se situe au niveau de la [Cale](/lexique), au Nord, là où a été établie la base scientifique **Saint-Martin-de-Viviès**. De l'autre côté, toute la partie Sud-Ouest est entaillée par des falaises abruptes de 600 à 700m d'altitude.
+D'une forme globalement ovale, l'île d'Amsterdam a une superficie de 58 km² (10 km de long, 7 km de large) et est entourée de falaises de 30 à 60 m de haut (point culminant : **Mont de la Dives, 881 m**). Les bateaux ne pouvant y accoster, c'est en hélicoptère que l'on y transporte le matériel et le personnel. Le seul accès à la mer se situe au niveau de la [Cale](/lexique/#cale "Quai de débarquement de l'île"), au Nord, là où a été établie la base scientifique **Saint-Martin-de-Viviès**. De l'autre côté, toute la partie Sud-Ouest est entaillée par des falaises abruptes de 600 à 700m d'altitude.
 
 La partie Nord du cratère de sa voisine, l'île Saint-Paul, s'étant effondrée sur elle-même, la forme de cette petite île ne laisse aucun doute quant à sa nature volcanique.
 
