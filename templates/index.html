@@ -46,12 +46,15 @@
         <tr>
           <td colspan=2><h1><a href="{{ config.base_url }}">{{ config.title }}</a></h1></td>
           <td rowspan=2>
-            <div class="menu-display">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" title="Menu">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
             <nav>
-              <ul class="nav-little">
+            <div class="menu-display">
+              <label for="mobile"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" title="Menu">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg></label>
+              <input type="checkbox" id="mobile" role="button">
+            
+            
+              <ul class="nav-little" >
                 <li><a href="{{ get_url(path="", trailing_slash=false) }}">Accueil</a></li>
                 <li><a href="{{ get_url(path="about", trailing_slash=false) }}">À propos</a></li>
                 <li><a href="{{ get_url(path="starting", trailing_slash=true) }}">Préambule</a></li>
@@ -63,8 +66,9 @@
                 <li><a href="{{ get_url(path="lexique", trailing_slash=false) }}">Lexique taafien</a></li>
                 <li><a href="{{ get_url(path="contact", trailing_slash=false) }}">Me contacter</a></li>
               </ul>
-            </nav>
+            
           </div>
+          </nav>
           </td>
         </tr>
         <tr>
@@ -96,7 +100,7 @@
         </td>
       </tr>
     </table><!-- Affichage PC -->
-    <img class="td-masqued" src="{{ get_url(path="images/banner.jpg", trailing_slash=false) }}", style = "width: 94%"/>
+    <img class="td-masqued" src="{{ get_url(path="images/banner.jpg", trailing_slash=false) }}", style = "width: 94%; margin-right: 12px;"/>
   </header>
   <div id="page">
     <div id="sidebar">
