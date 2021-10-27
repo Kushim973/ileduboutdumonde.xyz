@@ -3,11 +3,11 @@
   <ul id="slider">
     {% for asset in page.assets %}
     {% if asset is matching("[.](jpg|png)$") %}
-    {% set image = resize_image(path=asset, width=800, height=400, op="fit", quality=100) %}
+    {% set image = resize_image(path=asset, width=500, height=400, op="fit", quality=100) %}
     <li>
-      <a class="link-image" href="{{ get_url(path=asset) }}" target="_blank">
+      <center><a class="link-image" href="{{ get_url(path=asset) }}" target="_blank">
         <img src="{{ image.url }}" />
-      </a>
+      </a></center>
     </li>
     {% endif %}
     {% endfor %}

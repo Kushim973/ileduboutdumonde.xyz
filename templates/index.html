@@ -36,93 +36,106 @@
       document.documentElement.setAttribute("data-theme", theme);
     }
   </script>
-  <script>
-    $(function(){
-     $('#slider')
-     .anythingSlider() // add any non-default options here
-   });
- </script>
- {% block extra_head %}
- {% endblock extra_head %}
+  {% block extra_head %}
+  {% endblock extra_head %}
 </head>
 <body>
-  <header id="header">
-    <table style = "width: 94%">
+    <!-- Affichage smartphone -->
+    <header id="header" class="reveal">
+      <table class="barre-menu">
+        <tr>
+          <td colspan=2><h1><a href="{{ config.base_url }}">{{ config.title }}</a></h1></td>
+          <td rowspan=2>
+            <div class="menu-display">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" title="Menu">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+            <nav>
+              <ul class="nav-little">
+                <li><a href="{{ get_url(path="", trailing_slash=false) }}">Accueil</a></li>
+                <li><a href="{{ get_url(path="about", trailing_slash=false) }}">À propos</a></li>
+                <li><a href="{{ get_url(path="starting", trailing_slash=true) }}">Préambule</a></li>
+                <li><a href="{{ get_url(path="science", trailing_slash=true) }}">Parlons Science</a></li>
+                <li><a href="{{ get_url(path="mdf", trailing_slash=true) }}">Sur le Marion</a></li>
+                <li><a href="{{ get_url(path="base", trailing_slash=true) }}">Vie en station</a></li>
+                <li><a href="{{ get_url(path="people", trailing_slash=true) }}">Portraits</a></li>
+                <li><a href="{{ get_url(path="galerie", trailing_slash=false) }}">Galerie</a></li>
+                <li><a href="{{ get_url(path="lexique", trailing_slash=false) }}">Lexique taafien</a></li>
+                <li><a href="{{ get_url(path="contact", trailing_slash=false) }}">Me contacter</a></li>
+              </ul>
+            </nav>
+          </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan=2 class="td-sous-titre"><p class="sous-titre">{{ config.description }}</p></td>
+        </tr>
+      </table>
+    </header>
+    <!-- Affichage PC -->
+    <header id="header" class="td-masqued">
+    <table class="header-big">
       <tr>
         <td>
           <h1><a href="{{ config.base_url }}">{{ config.title }}</a></h1>
         </td>
-        <td class="td-masqued" rowspan="2">
+        <td rowspan="2">
           <a class="link-image" href="https://institut-polaire.fr/fr/" target="_blank">
             <img src="{{ get_url(path="images/logo_ipev_main-128x128.png", trailing_slash=false) }}" alt="logo_ipev"/>
           </a>
         </td>
-        <td class="td-masqued" rowspan="2">
+        <td rowspan="2">
           <a class="link-image" href="https://taaf.fr/" target="_blank">
             <img src="{{ get_url(path="images/logo_taaf_main-128x128.png", trailing_slash=false) }}" alt="logo_taaf"/>
           </a>
         </td>
       </tr>
       <tr>
-        <td style = "vertical-align: top; padding-left: 50px;">
+        <td class="td-sous-titre">
           <p class="sous-titre">{{ config.description }}</p>
         </td>
       </tr>
-    </table>
-    <table class="reveal">
-      <td class="td-header">
-          <a class="link-image" href="https://institut-polaire.fr/fr/" target="_blank">
-            <img src="{{ get_url(path="images/logo_ipev_main-64x64.png", trailing_slash=false) }}" alt="logo_ipev"/>
-          </a>
-        </td>
-        <td class="td-header">
-          <a class="link-image" href="https://taaf.fr/" target="_blank">
-            <img src="{{ get_url(path="images/logo_taaf_main-64x64.png", trailing_slash=false) }}" alt="logo_taaf"/>
-          </a>
-        </td>
-    </table>
-    <div class="theme-switch">
-      <div class="light-switch" onclick="toggle_lights()" title="Changer le thème"></div>
-      <div class="light-switch-reset" onclick="clear_theme_override()" title="Revenir au thème du système"></div>
-    </div>
-    <img src="{{ get_url(path="images/banner.jpg", trailing_slash=false) }}", style = "width: 94%"/>
+    </table><!-- Affichage PC -->
+    <img class="td-masqued" src="{{ get_url(path="images/banner.jpg", trailing_slash=false) }}", style = "width: 94%"/>
   </header>
   <div id="page">
     <div id="sidebar">
       {% block sidebar %}
-      <div class="search-container">
-        <input id="search" type="search" placeholder="🔎 Rechercher dans le site">
-        <div class="search-results">
-          <div class="search-results__items"></div>
+      <div class="search-display">
+        <div class="search-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+      </div>
+        <div class="search-container">
+          <input id="search" type="search" placeholder="🔎 Rechercher dans le site">
+          <div class="search-results">
+            <div class="search-results__items"></div>
+          </div>
         </div>
       </div>
-      <nav>
+      <nav class="td-masqued">
         <ul class="nav">
           {% block sidebar_nav %}
-            <li><a href="{{ get_url(path="", trailing_slash=false) }}">Accueil</a></li>
-            <span class="reveal">&middot;</span>
-            <li><a href="{{ get_url(path="about", trailing_slash=false) }}">À propos</a></li>
-            <span class="reveal">&middot;</span>
-            <li><a href="{{ get_url(path="starting", trailing_slash=true) }}">Préambule</a></li>
-            <span class="reveal">&middot;</span>
-            <li><a href="{{ get_url(path="science", trailing_slash=true) }}">Parlons Science</a></li>
-            <span class="reveal">&middot;</span>
-            <li><a href="{{ get_url(path="mdf", trailing_slash=true) }}">Sur le Marion</a></li>
-            <span class="reveal">&middot;</span>
-            <li><a href="{{ get_url(path="base", trailing_slash=true) }}">Vie en station</a></li>
-            <span class="reveal">&middot;</span>
-            <li><a href="{{ get_url(path="people", trailing_slash=true) }}">Portraits</a></li>
-            <span class="reveal">&middot;</span>
-            <li><a href="{{ get_url(path="galerie", trailing_slash=false) }}">Galerie</a></li>
-            <span class="reveal">&middot;</span>
-            <li><a href="{{ get_url(path="lexique", trailing_slash=false) }}">Lexique taafien</a></li>
-            <span class="reveal">&middot;</span>
-            <li><a href="{{ get_url(path="contact", trailing_slash=false) }}">Me contacter</a></li>
+          <li><a href="{{ get_url(path="", trailing_slash=false) }}">Accueil</a></li>
+          <li><a href="{{ get_url(path="about", trailing_slash=false) }}">À propos</a></li>
+          <li><a href="{{ get_url(path="starting", trailing_slash=true) }}">Préambule</a></li>
+          <li><a href="{{ get_url(path="science", trailing_slash=true) }}">Parlons Science</a></li>
+          <li><a href="{{ get_url(path="mdf", trailing_slash=true) }}">Sur le Marion</a></li>
+          <li><a href="{{ get_url(path="base", trailing_slash=true) }}">Vie en station</a></li>
+          <li><a href="{{ get_url(path="people", trailing_slash=true) }}">Portraits</a></li>
+          <li><a href="{{ get_url(path="galerie", trailing_slash=false) }}">Galerie</a></li>
+          <li><a href="{{ get_url(path="lexique", trailing_slash=false) }}">Lexique taafien</a></li>
+          <li><a href="{{ get_url(path="contact", trailing_slash=false) }}">Me contacter</a></li>
           {% endblock sidebar_nav %}
         </ul>
       </nav>
       {% endblock sidebar %}
     </div>
+            <div class="theme-switch">
+          <div class="light-switch" onclick="toggle_lights()" title="Changer le thème"></div>
+          <div class="light-switch-reset" onclick="clear_theme_override()" title="Revenir au thème du système"></div>
+        </div>
     
     <div id="content">
       {% block content %}

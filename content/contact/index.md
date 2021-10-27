@@ -4,7 +4,7 @@ date = 2021-10-19
 description = "Les différents moyens de me contacter"
 +++
 
-{{ image_apercu(path="contact/images/base.jpg", width=500, height=150, quality=100) }}
+{{ image_apercu(path="contact/images/base.jpg", width=1000, height=250, quality=100) }}
 
 Voici les différents moyens de me contacter.
 
@@ -17,14 +17,12 @@ Voici les différents moyens de me contacter.
 
 Vous pouvez me contacter à tout moment sur mon adresse Gmail :
 
-
-[![Mail GMAIL](/images/gmail_icon-64x64.png "Envoyer un mail sur gmail")](mailto:romane.nespoulet%40gmail%2Ecom)
-
+<center><a href="mailto:romane.nespoulet%40gmail%2Ecom"><img class="icon" src="/images/gmail_icon-64x64.png" alt="Mail GMAIL" title="Envoyer un mail sur gmail"></a></center>
 
 Pendant ma mission, à cause du faible débit sur mon caillou, préférez mon adresse dédiée :
 
+<center><a href="mailto:romane.nespoulet%40amsterdam%2Eipev%2Efr"><img class="icon" src="/images/ipev_icon-64x64.png" alt="Mail IPEV" title="Envoyer un mail sur IPEV"></a></center>
 
-[![Mail IPEV](/images/ipev_icon-64x64.png "Envoyer un mail sur IPEV")](mailto:romane.nespoulet%40amsterdam%2Eipev%2Efr)
 
 
 ## Par courrier

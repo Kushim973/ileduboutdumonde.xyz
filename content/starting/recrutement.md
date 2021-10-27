@@ -32,18 +32,18 @@ En parallèle, je fus convoquée aux tests d'aptitudes médicale et psychologiqu
 
 . Les îles Éparses de l’Océan Indien
 
-{{ resize_image(path="starting/images/carte-monde_TAAF-1920x1080.jpg", width=550, height=550, op="fit", author="Bruno Marie", date="", quality=100) }}
+{{ resize_image(path="starting/images/carte-monde_TAAF-1920x1080.jpg", width=1000, height=550, op="fit", author="Bruno Marie", date="", quality=100) }}
 
 
 Dans les Îles Australes (Crozet, Kerguelen et Saint-Paul et Amsterdam), la souveraineté française est affirmée par les bases scientifiques occupées en permanence et par la surveillance des eaux territoriales qui entourent ces îles. 
 
-{{ resize_image(path="starting/images/monde_Australes-1920x1080.jpg", width=550, height=550, op="fit", author="Bruno Marie", date="", quality=100) }}
+{{ resize_image(path="starting/images/monde_Australes-1920x1080.jpg", width=1000, height=550, op="fit", author="Bruno Marie", date="", quality=100) }}
 
 Ces dernières sont d'ailleurs inscrites sur la **Liste du patrimoine mondial de l'UNESCO** car elles ont su, du fait de leur isolement et de leur éloignement des activités anthropiques, rester un sanctuaire de biodiversité. De par la diversité des espèces de mammifères et d'oiseaux marins qui s'y trouvent, de par leurs eaux très productives où la pêche est miraculeuse, de par les paysages exceptionnels de ces terres volcaniques, ces îles constituent un patrimoine naturel unique au monde qu'il est important de protéger et de maintenir à long terme. 
 
 C'est le rôle de la [Réserve Naturelle Nationale des Terres Australes](https://reserve-australes.taaf.fr/), créée le **3 octobre 2006** (décret n°2006-1211). Sa surface totale atteint **672 969 km²**, dont environ 7 700 km² en milieu terrestre (pour comparaison, c'est plus que la superficie de la France métropolitaine, de la Belgique et de la Suisse réunies), ce qui en fait la plus grande réserve naturelle nationale française et l'une des plus grande aire marine protégée au monde.
 
-{{ resize_image(path="starting/images/carte-RNN.jpg", width=550, height=450, op="fit", author="RNN Terres Australes", date="", quality=100) }}
+{{ resize_image(path="starting/images/carte-RNN.jpg", width=1000, height=450, op="fit", author="RNN Terres Australes", date="", quality=100) }}
 
 ## L'Institut Polaire Français
 
