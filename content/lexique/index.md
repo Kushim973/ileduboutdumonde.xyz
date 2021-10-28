@@ -32,6 +32,7 @@ ___________________                         | __________________________________
 <span id="infra">Infra</span>               | L'ensemble des corps de métiers responsables des infrastructures               |
 <span id="ipev">IPEV</span>                 | Institut Polaire Français (Paul-Émile Victor)                                  |
 <span id="ker">Ker</span>                   | District de Kerguelen                                                          |
+<span id="logipev">LogIpev</span>           | Plateforme logistique pour les opérations Subantarctiques                      |
 <span id="marion">Marion</span>             | Marion Dufresne II, le navire ravitailleur                                     |
 <span id="martin">Martin de Viviès</span>   | Nom de la station du district d'Amsterdam                                      |
 <span id="op">OP</span>                     | Opération Portuaire, une rotation complète du Marion                           |

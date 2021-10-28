@@ -13,10 +13,12 @@ Je m'appelle Romane Nespoulet, et cette année j'ai la chance de pouvoir réalis
 
 Tout commença fin janvier 2021 par l'envoi de ma candidature pour les postes de [VSC](/lexique/#vsc "Volontariat en Service Civique") "Physico-chimie de l'atmosphère" aux responsables RH de l'[IPEV](/lexique/#ipev "Institut Polaire Français").
 
-Quelques mois plus tard, et après quelques rebondissements, j'étais retenue sur le programme [ICOS-RAMCES 416](/science/icos-416/) "Mesure des Gaz à Effet de Serre sur l'Île d'Amsterdam". 
+Quelques mois plus tard, et après quelques rebondissements, j'étais retenue sur le programme [ICOS-RAMCES 416](/science/icos-416) "Mesure des Gaz à Effet de Serre sur l'Île d'Amsterdam". 
 Le recrutement se poursuivit par un entretien en visio (la Covid a encore frappé) et une petite visite au [LSCE](https://www.lsce.ipsl.fr/ "Laboratoire des Sciences du Climat et Environnement") à Gif-sur-Yvette (78) afin de rencontrer en personne les responsables du programme. 
 
-En parallèle, je fus convoquée aux tests d'aptitudes médicale et psychologique. Ceux-ci se sont déroulés fin mai à Paris, et ont duré une journée entière. Les tests psy ont eu lieu au siège de l'antenne parisienne des [TAAF](https://taaf.fr/ "Terres Australes et Antarctiques Françaises") : je n'ai jamais été aussi proche de mon objectif ! L'attente des résultats fut longue, et finalement : *je suis apte* ! Mon départ en hivernage (14 mois) pour la mission 73 sur le district des Îles Saint-Paul et Amsterdam était enfin confirmé. 
+En parallèle, je fus convoquée aux tests d'aptitudes médicale et psychologique. Ceux-ci se sont déroulés fin mai à Paris, et ont duré une journée entière. Les tests psy ont eu lieu au siège de l'antenne parisienne des [TAAF](https://taaf.fr/ "Terres Australes et Antarctiques Françaises") : je n'ai jamais été aussi proche de mon objectif ! L'attente des résultats fut longue, et finalement, les psy ont jugé que j'étais suffisemment folle pour partir ! Mon départ en hivernage (14 mois) pour la mission 73 sur le district des Îles Saint-Paul et Amsterdam était enfin confirmé. 
+
+Mais avant de partir, il me reste encore plein de dossiers administratifs et des [cantines](/starting/malles) à remplir !
 
 ## Les Terres Australes et Antarctiques Françaises
 

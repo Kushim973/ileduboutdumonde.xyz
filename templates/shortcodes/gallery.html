@@ -1,16 +1,13 @@
-<div>
-  <script>$(function(){ $('#slider').anythingSlider(); });</script>
-  <ul id="slider">
-    {% for asset in page.assets %}
-    {% if asset is matching("[.](jpg|png)$") %}
-    {% set image = resize_image(path=asset, width=500, height=400, op="fit", quality=100) %}
-    <li>
-      <center><a class="link-image" href="{{ get_url(path=asset) }}" target="_blank">
-        <img src="{{ image.url }}" />
-      </a></center>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
+<div class="gallery">
+  {% set data = load_data(path="/content/galerie/images_metadata.json") %}
+  {% for d in data.records %}
+  {% set image = resize_image(path=d.0, width=300, height=250, quality=100) %}
+  <div class="gallery-image">
+    <a class="link-image" href="{{ get_url(path=d.0) }}" target="_blank">
+      <img src="{{ image.url }}" />
+    </a>
+    <p class="caption">{{ d.3 }} &copy; {{ d.2 }} {{ d.1 }}</p></center>
+  </div>
+  {% endfor %}
 </div>
 

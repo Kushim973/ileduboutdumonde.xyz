@@ -13,7 +13,6 @@
   <title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
   <link href="{{ get_url(path="main.css", trailing_slash=false) }}" rel="stylesheet">
-  <link href="{{ get_url(path="anythingslider.css") }}" rel="stylesheet">
 
   {% if config.generate_rss %}
   <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
@@ -23,11 +22,9 @@
   <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="images/favicon-16x16.png") }}">
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script type="text/javascript" src="{{ get_url(path="elasticlunr.min.js") }}"></script>
   <script type="text/javascript" src="{{ get_url(path="search_index.en.js") }}"></script>
   <script type="text/javascript" src="{{ get_url(path="search.js") }}"></script>
-  <script type="text/javascript" src="{{ get_url(path="jquery.anythingslider.min.js") }}"></script>
 
   <script async src="{{ get_url(path="switch_themes.js") }}"></script>
   <script>
@@ -52,8 +49,6 @@
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg></label>
               <input type="checkbox" id="mobile" role="button">
-            
-            
               <ul class="nav-little" >
                 <li><a href="{{ get_url(path="", trailing_slash=false) }}">Accueil</a></li>
                 <li><a href="{{ get_url(path="about", trailing_slash=false) }}">À propos</a></li>

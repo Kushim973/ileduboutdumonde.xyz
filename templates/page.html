@@ -2,6 +2,17 @@
 
 {% block content %}
 <article class="post">
+  {% set data = load_data(path="/articles_metadata.json") %}
+  {% for d in data.records %}
+  {% set test = page.title %}
+    {% if d.2 == test %}
+      <p class="meta"><a href="{{ get_url(path="", trailing_slash=false) }}">Home</a>
+        {% if d.0 != "" %} 
+          > <a href="{{ d.1 | safe }}">{{ d.0 | safe }}</a>
+        {% endif %}
+        > <a href="{{ page.permalink }}">{{ page.title }}</a></p>
+    {% endif %}
+    {% endfor %}
   <h1><a href="{{ page.permalink }}">{{ page.title }}</a></h1>
 
   <p class="meta">Posté le <span class="postdate">{{ page.date | date(format="%d/%m/%Y") }}</span></p>

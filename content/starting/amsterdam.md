@@ -8,11 +8,11 @@ description = "Préambule"
 
 {{ image_apercu(path="starting/images/amsterdam.jpg", width=1000, height=250, quality=100) }}
 
-L'île d'Amsterdam forme, avec l'île Saint-Paul, le district de Saint-Paul et Amsterdam (*cap'tain Obvious was here*). Ces îles sont deux cailloux volcaniques perdus au sud de l'Océan Indien distants d'environ 85 kilomètres. Alors que l'île d'Amsterdam abrite la base scientifique Saint-Martin-de-Viviès depuis 1950, l'île Saint-Paul est, quant à elle, formellement interdite d'accès en sa qualité de réserve biologique intégrale. 
+L'île d'Amsterdam forme, avec l'île Saint-Paul, le district de Saint-Paul et Amsterdam (*cap'tain Obvious was here*). Ces îles sont deux cailloux volcaniques perdus au sud de l'Océan Indien distants d'environ 85 kilomètres.
 
 <!-- more -->
 
-
+Alors que l'île d'Amsterdam abrite la base scientifique Saint-Martin-de-Viviès depuis 1950, l'île Saint-Paul est, quant à elle, formellement interdite d'accès en sa qualité de réserve biologique intégrale. 
 
 ## Situation géographique
 

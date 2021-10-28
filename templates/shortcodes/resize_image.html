@@ -1,5 +1,5 @@
-{% set image = resize_image(path=path, width=width, height=height, op=op, author=author, date=date, quality=quality) %}
+{% set image = resize_image(path=path, width=width, height=height, op=op, quality=quality) %}
 <center><a style="padding: 0 0 0 0;" href="{{ get_url(path=path) }}" target="_blank">
     <img src="{{ image.url }}" />
 </a>
-<p style="font-size: 14px; font-style: italic; text-align: center;">&copy; {{date}} {{ author }} &middot; Institut polaire français &middot; TAAF</p></center>
+<p class="caption">&copy; {{date}} {{ author }} &middot; Institut polaire français &middot; TAAF</p></center>

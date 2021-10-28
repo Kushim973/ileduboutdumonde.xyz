@@ -300,6 +300,31 @@ a:hover {
 	background-color: transparent;
 }
 
+.gallery {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.gallery img {
+	margin: 5px 5px 5px 5px;
+	width: auto;
+	height: auto;
+	display: inline;
+
+}
+
+.gallery-image {
+	width: 310px;
+}
+
+.caption {
+	font-size: 12px; 
+	font-style: italic; 
+	text-align: center;
+}
+
 p {
 	margin-bottom: 15px;
 	word-wrap: break-word;
