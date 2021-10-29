@@ -17,11 +17,11 @@ Voici les différents moyens de me contacter.
 
 Vous pouvez me contacter à tout moment sur mon adresse Gmail :
 
-<center><a href="mailto:romane.nespoulet%40gmail%2Ecom"><img class="icon" src="/images/gmail_icon-64x64.png" alt="Mail GMAIL" title="Envoyer un mail sur gmail"></a></center>
+<center><a class="link-image" href="mailto:romane.nespoulet%40gmail%2Ecom"><img class="icon" src="/images/gmail_icon-64x64.png" alt="Mail GMAIL" title="Envoyer un mail sur gmail"></a></center>
 
 Pendant ma mission, à cause du faible débit sur mon caillou, préférez mon adresse dédiée :
 
-<center><a href="mailto:romane.nespoulet%40amsterdam%2Eipev%2Efr"><img class="icon" src="/images/ipev_icon-64x64.png" alt="Mail IPEV" title="Envoyer un mail sur IPEV"></a></center>
+<center><a class="link-image" href="mailto:romane.nespoulet%40amsterdam%2Eipev%2Efr"><img class="icon" src="/images/ipev_icon-64x64.png" alt="Mail IPEV" title="Envoyer un mail sur IPEV"></a></center>
 
 
 

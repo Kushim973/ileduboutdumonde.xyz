@@ -19,4 +19,4 @@ Mais au beau milieu de l'Apocalypse, le salut de l'âme, j'ai nommé : le tablea
 
 Avant la fermeture définitive, j'insère un inventaire récapitulatif dans chaque malle, et je colle les étiquettes bleues, couleur du district d'Amsterdam, qui permettent d'identifier chaque cantine pendant le fret.
 
-Et voilà, elles sont enfin prêtes ! Le transporteur de l'IPEV viendra les chercher dans quelques jours pour les amener à Brest. De là, les personnels de la [LogIpev](/lexique/#logipev "Plateforme logistique pour les opérations Subantarctiques") s'occupent de les expédier à la Réunion. Ensuite, elles prendront le bateau avec moi, et je les retrouverai une fois arrivée sur l'île, dans 4 mois !
+Et voilà, elles sont enfin prêtes ! Le transporteur de l'IPEV viendra les chercher dans quelques jours pour les amener à Brest. De là, les personnels de la [Log-Ipev](/lexique/#logipev "Plateforme logistique pour les opérations Subantarctiques de l'IPEV") s'occupent de les expédier à la Réunion. Ensuite, elles prendront le bateau avec moi, et je les retrouverai une fois arrivée sur l'île, dans 4 mois !

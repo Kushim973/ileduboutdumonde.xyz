@@ -18,7 +18,7 @@ Le recrutement se poursuivit par un entretien en visio (la Covid a encore frapp�
 
 En parallèle, je fus convoquée aux tests d'aptitudes médicale et psychologique. Ceux-ci se sont déroulés fin mai à Paris, et ont duré une journée entière. Les tests psy ont eu lieu au siège de l'antenne parisienne des [TAAF](https://taaf.fr/ "Terres Australes et Antarctiques Françaises") : je n'ai jamais été aussi proche de mon objectif ! L'attente des résultats fut longue, et finalement, les psy ont jugé que j'étais suffisemment folle pour partir ! Mon départ en hivernage (14 mois) pour la mission 73 sur le district des Îles Saint-Paul et Amsterdam était enfin confirmé. 
 
-Mais avant de partir, il me reste encore plein de dossiers administratifs et des [cantines](/starting/malles) à remplir !
+Mais avant de partir, il me restait encore plein de dossiers administratifs et des [cantines](/starting/malles) à remplir !
 
 ## Les Terres Australes et Antarctiques Françaises
 

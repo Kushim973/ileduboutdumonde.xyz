@@ -64,7 +64,7 @@ L'île d'Amsterdam a un climat nous rappelant le Finistère et est l'île au cli
 
 Les deux îles partagent également leurs histoires en commun. Elles sont situées au Sud de la route entre Le Cap (Afrique du Sud) et les îles de la Sonde (Asie du Sud-Est), c'est à dire sur l'ancienne route maritime reliant l'Europe aux Indes.
 
-L'île d'Amsterdam est mentionnée la première fois dans le journal de l'expédition de Magellan, le 18 mars 1522. Saint-Paul, quant à elle, est découverte par Gysaerths, un navirateur portugais, en 1559, qui la baptise Nao Sao Paulo.
+L'île d'Amsterdam est mentionnée la première fois dans le journal de l'expédition de Magellan, le 18 mars 1522. Saint-Paul, quant à elle, est découverte par Gysaerths, un navigateur portugais, en 1559, qui la baptise Nao Sao Paulo.
 
 Puis Amsterdam est observée à plusieurs reprises par des navigateurs au début du XVIIe siècle, mais c'est le hollandais Antonio Van Diemen qui lui donne le nom de son navire, *Niew Amsterdam*, en 1633. En 1696, un autre hollandais, Willem de Vlamingh, est le premier à y poser le pied. L'amiral d'Entrecasteaux, à la recherche de *la Pérouse*, s'y arrête en 1792. La falaise occidentale de l'île porte désormais son nom.
 
