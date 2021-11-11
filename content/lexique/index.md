@@ -27,12 +27,12 @@ ___________________                         | __________________________________
 <span id="dz">DZ</span>                     | Drop Zone (héliport)                                                           |
 <span id="gener">Gener</span>               | Logisticien de la station (informaticien & électronicien)                      |
 <span id="geophy">Géophy</span>             | Bâtiment où se trouvent les labos et les bureaux des VSC                       |
-<span id="gip">GIP</span>                   | Groupement d'Intérêt Public (l'IPEV en est un)                                 |
 <span id="gp">GP</span>                     | Gérant Postal, le postier d'chez nous !                                        |
 <span id="infra">Infra</span>               | L'ensemble des corps de métiers responsables des infrastructures               |
 <span id="ipev">IPEV</span>                 | Institut Polaire Français (Paul-Émile Victor)                                  |
 <span id="ker">Ker</span>                   | District de Kerguelen                                                          |
 <span id="logipev">Log-Ipev</span>          | Plateforme logistique pour les opérations Subantarctiques de l'IPEV            |
+<span id="manip">Manip'</span>              | Une manip', c'est des travaux à réaliser pour un programme scientifique        |
 <span id="marion">Marion</span>             | Marion Dufresne II, le navire ravitailleur                                     |
 <span id="martin">Martin de Viviès</span>   | Nom de la station du district d'Amsterdam                                      |
 <span id="op">OP</span>                     | Opération Portuaire, une rotation complète du Marion                           |

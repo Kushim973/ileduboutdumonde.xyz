@@ -4,6 +4,8 @@ date = 2021-07-01
 
 +++
 
+{{ image_apercu(path="starting/images/recrutement/fleurs_reu.jpg", width=1000, height=250, quality=100) }}
+
 Je m'appelle Romane Nespoulet, et cette année j'ai la chance de pouvoir réaliser un rêve de longue date ! Depuis longtemps passionnée par les milieux polaires, et fascinée par le continent Antarctique, partir dans les Terres Australes et Antarctiques Françaises s'est révélé être comme une évidence. 
 
 <!-- more -->
@@ -34,20 +36,24 @@ Mais avant de partir, il me restait encore plein de dossiers administratifs et d
 
 . Les îles Éparses de l’Océan Indien
 
-{{ resize_image(path="starting/images/carte-monde_TAAF-1920x1080.jpg", width=1000, height=550, op="fit", author="Bruno Marie", date="", quality=100) }}
+{{ resize_image(path="starting/images/recrutement/carte-monde_TAAF-1920x1080.jpg", width=1000, height=550, op="fit", author="Bruno Marie", date="", quality=100, title="Les TAAF dans le monde") }}
 
 
-Dans les Îles Australes (Crozet, Kerguelen et Saint-Paul et Amsterdam), la souveraineté française est affirmée par les bases scientifiques occupées en permanence et par la surveillance des eaux territoriales qui entourent ces îles. 
+Dans les <span id="australes">Îles Australes</span> (Crozet, Kerguelen et Saint-Paul et Amsterdam), la souveraineté française est affirmée par les bases scientifiques occupées en permanence et par la surveillance des eaux territoriales qui entourent ces îles. 
 
-{{ resize_image(path="starting/images/monde_Australes-1920x1080.jpg", width=1000, height=550, op="fit", author="Bruno Marie", date="", quality=100) }}
+{{ resize_image(path="starting/images/recrutement/monde_Australes-1920x1080.jpg", width=1000, height=550, op="fit", author="Bruno Marie", date="", quality=100, title="Carte des Australes") }}
 
-Ces dernières sont d'ailleurs inscrites sur la **Liste du patrimoine mondial de l'UNESCO** car elles ont su, du fait de leur isolement et de leur éloignement des activités anthropiques, rester un sanctuaire de biodiversité. De par la diversité des espèces de mammifères et d'oiseaux marins qui s'y trouvent, de par leurs eaux très productives où la pêche est miraculeuse, de par les paysages exceptionnels de ces terres volcaniques, ces îles constituent un patrimoine naturel unique au monde qu'il est important de protéger et de maintenir à long terme. 
+Ces dernières sont d'ailleurs inscrites sur la **Liste du patrimoine mondial de l'UNESCO** car elles ont pu, du fait de leur isolement et de leur éloignement des activités anthropiques, rester un sanctuaire de biodiversité. De par la diversité des espèces de mammifères et d'oiseaux marins qui s'y trouvent, de par leurs eaux très productives où la pêche est miraculeuse, de par les paysages exceptionnels de ces terres volcaniques, ces îles constituent un patrimoine naturel unique au monde qu'il est important de protéger et de maintenir à long terme. 
 
 C'est le rôle de la [Réserve Naturelle Nationale des Terres Australes](https://reserve-australes.taaf.fr/), créée le **3 octobre 2006** (décret n°2006-1211). Sa surface totale atteint **672 969 km²**, dont environ 7 700 km² en milieu terrestre (pour comparaison, c'est plus que la superficie de la France métropolitaine, de la Belgique et de la Suisse réunies), ce qui en fait la plus grande réserve naturelle nationale française et l'une des plus grande aire marine protégée au monde.
 
-{{ resize_image(path="starting/images/carte-RNN.jpg", width=1000, height=450, op="fit", author="RNN Terres Australes", date="", quality=100) }}
+{{ resize_image(path="starting/images/recrutement/protection_crozet.png", width=1000, height=450, op="fit", author="RNN Terres Australes", date="", quality=100, title="Carte des zones protégées sur le district de Crozet") }}
+
+{{ resize_image(path="starting/images/recrutement/protection_ker.png", width=1000, height=450, op="fit", author="RNN Terres Australes", date="", quality=100, title="Carte des zones protégées sur le district de Kerguelen") }}
+
+{{ resize_image(path="starting/images/recrutement/protection_ams.png", width=1000, height=450, op="fit", author="RNN Terres Australes", date="", quality=100, title="Carte des zones protégées sur le district de Saint-Paul et Amsterdam") }}
 
 ## L'Institut Polaire Français
 
-[L'IPEV](https://institut-polaire.fr/fr/ "Institut Polaire Français"), quant à lui, est un [GIP](/lexique/#gip "Groupement d'Intérêt Public"), un organisme qui met des moyens matériels et humains, ainsi que des compétences à disposition de la recherche scientifique en milieux polaires. C'est lui qui gère toute la logistique (notamment le fret, le transport de personnels et l'entretien des infrastructures) au sein des TAAF. C'est aussi lui qui se charge de recruter et d'employer le personnel hivernant en soutient de la recherche, autrement dit : nous, les VSC ! En finançant une partie du bugdet des projets scientifiques sélectionnés et en mettant à disposition du matériel et du personnel, l'IPEV s'assure du bon déroulement de la recherche scientifique dans ces milieux à l'accès difficile et au climat rude.
+[L'IPEV](https://institut-polaire.fr/fr/ "Institut Polaire Français"), quant à lui, est un organisme qui met des moyens matériels et humains, ainsi que des compétences à disposition de la recherche scientifique en milieux polaires. C'est lui qui gère toute la logistique (notamment le fret, le transport de personnels et l'entretien des infrastructures) au sein des TAAF. C'est aussi lui qui se charge de recruter et d'employer le personnel hivernant en soutient de la recherche, autrement dit : nous, les VSC ! En finançant une partie du bugdet des projets scientifiques sélectionnés et en mettant à disposition du matériel et du personnel, l'IPEV s'assure du bon déroulement de la recherche scientifique dans ces milieux à l'accès difficile et au climat rude.
 

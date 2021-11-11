@@ -2,11 +2,17 @@
     "headers": ["name", "author", "date", "titre"],
     "records": [
     	["/galerie/images/saint_paul.jpg","Bruno Marie","", "Île Saint-Paul"],
-        ["/galerie/images/base.jpg","Yann Bertrand","2018", "Saint Martin de Viviès"],
-		["/galerie/images/caldeira.jpg","Yann Bertrand","2018", "Caldeira"],
-		["/galerie/images/falaise_entrecasteaux.jpg","Yann Bertrand","2018", "Entrecasteaux"],
-		["/galerie/images/pointe_B.jpg","Yann Bertrand","2018", "Pointe Bénédicte"],
-		["/galerie/images/vue_ile.jpg","Yann Bertrand","2018", "Île d'Amsterdam"]
+        ["/galerie/images/base.jpg","Yann Bertrand","2018", "Base Saint Martin de Viviès (Amsterdam)"],
+		["/galerie/images/caldeira.jpg","Yann Bertrand","2018", "Caldeira (Amsterdam)"],
+		["/galerie/images/falaise_entrecasteaux.jpg","Yann Bertrand","2018", "Entrecasteaux (Amsterdam)"],
+		["/galerie/images/pointe_B.jpg","Yann Bertrand","2018", "Pointe Bénédicte (Amsterdam)"],
+		["/galerie/images/vue_ile_de_lest.jpg","Romane Nespoulet","2021", "Île de l'Est vue de la base Alfred Faure (Crozet)"],
+		["/galerie/images/BDM.jpg","Romane Nespoulet","2021", "Baie du Marin (Crozet)"],
+		["/galerie/images/marion_dans_bdm.jpg","Romane Nespoulet","2021", "Le Marion dans la Baie du Marin (Crozet)"],
+		["/galerie/images/vue_manchotiere.jpg","Romane Nespoulet","2021", "La manchotière de la Baie du Marin (Crozet)"],
+		["/galerie/images/portrait_manchot.jpg","Romane Nespoulet","2021", "Manchots royaux (Crozet)"]
+
+
 
     ]
 }

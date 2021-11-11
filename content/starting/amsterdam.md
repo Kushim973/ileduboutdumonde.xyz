@@ -6,7 +6,7 @@ description = "Préambule"
 +++
 
 
-{{ image_apercu(path="starting/images/amsterdam.jpg", width=1000, height=250, quality=100) }}
+{{ image_apercu(path="starting/images/amsterdam/amsterdam.jpg", width=1000, height=250, quality=100) }}
 
 L'île d'Amsterdam forme, avec l'île Saint-Paul, le district de Saint-Paul et Amsterdam (*cap'tain Obvious was here*). Ces îles sont deux cailloux volcaniques perdus au sud de l'Océan Indien distants d'environ 85 kilomètres.
 
@@ -29,15 +29,15 @@ Coordonnées GPS :
 Les deux îles se situent juste au dessus du 40e parallèle, et plus exactement au niveau de la latitude 37° Sud. Si l'on reporte cette latitude dans l'autre hémisphère, on se retrouve au niveau du sud de l'Espagne. Concrètement, cela signifie qu'à Paris, on est plus proche du Pôle Nord que je le serai du Pôle Sud. Mais vous verrez dans la section "[Climat](#climat)" qu'on est très loin de la douceur de l'Andalousie :sunglasses:.
 
 
-{{ resize_image(path="starting/images/AmsterdamIsl_Map.png", width=1000, height=450, op="fit", author="Varp - Wikipedia", date="2006", quality=100) }}
+{{ resize_image(path="starting/images/amsterdam/AmsterdamIsl_Map.png", width=1000, height=450, op="fit", author="Varp - Wikipedia", date="2006", quality=100, title="Carte de l'île Amsterdam") }}
 
-{{ resize_image(path="starting/images/StPaul_Map.png", width=1000, height=520, op="fit", author="Varp - Wikipedia", date="2006", quality=100) }}
+{{ resize_image(path="starting/images/amsterdam/StPaul_Map.png", width=1000, height=520, op="fit", author="Varp - Wikipedia", date="2006", quality=100, title="Carte de l'île Saint-Paul") }}
 
 D'une forme globalement ovale, l'île d'Amsterdam a une superficie de 58 km² (10 km de long, 7 km de large) et est entourée de falaises de 30 à 60 m de haut (point culminant : **Mont de la Dives, 881 m**). Les bateaux ne pouvant y accoster, c'est en hélicoptère que l'on y transporte le matériel et le personnel. Le seul accès à la mer se situe au niveau de la [Cale](/lexique/#cale "Quai de débarquement de l'île"), au Nord, là où a été établie la base scientifique **Saint-Martin-de-Viviès**. De l'autre côté, toute la partie Sud-Ouest est entaillée par des falaises abruptes de 600 à 700m d'altitude.
 
-La partie Nord du cratère de sa voisine, l'île Saint-Paul, s'étant effondrée sur elle-même, la forme de cette petite île ne laisse aucun doute quant à sa nature volcanique.
+La partie Nord de la caldeira de sa voisine, l'île Saint-Paul, s'étant effondrée sur elle-même, la forme de cette petite île ne laisse aucun doute quant à sa nature volcanique.
 
-{{ resize_image(path="starting/images/saint_paul.jpg", width=1000, height=350, op="fit", author="Bruno Marie", date="", quality=100) }}
+{{ resize_image(path="starting/images/amsterdam/saint_paul.jpg", width=1000, height=350, op="fit", author="Bruno Marie", date="", quality=100, title="L'île Saint-Paul") }}
 
 
 ## Pour mes amis géologues

@@ -29,5 +29,5 @@ Bonne lecture !
 - [Réserve Naturelle](https://reserve-australes.taaf.fr/) : Site officiel de la Réserve Naturelle des Terres Australes
 - [Blog officiel de l'Île d'Amsterdam](https://saintpauletamsterdam.blogspot.com/): Tenu par le chef de district
 
-{{ resize_image(path="about/images/falaise_etx.jpg", width=1000, height=650, op="fit", author="Yann Bertrand", date="2018", quality=100) }}
+{{ resize_image(path="about/images/falaise_etx.jpg", width=1000, height=650, op="fit", author="Yann Bertrand", date="2018", quality=100, title="Falaise d'Entrecasteaux") }}
 
