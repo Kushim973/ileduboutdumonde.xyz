@@ -9,7 +9,7 @@ date = 2021-11-04
 
 <!-- more -->
 
-je suis prête dès 7h du matin car on peut être appelés à tout moment pour prendre l'hélico. Mais le ciel est très chargé ce matin, et le brouillard nous empêche de voir la base. Impossible pour l'hélico de décoller dans ces conditions ! À 10h, le ciel ne s'est toujours pas dégagé. Un peu désoeuvrés, nous rôdons tous sur le pont, en attendant de nouvelles directives. Mais tout à coup, un signal à la radio : le brouillard est en train de se lever, on va pouvoir partir ! Branle-bas de combat au *PC Sciences* (l'endroit où on peut travailler tranquillement et où on a accès à Internet), nous rangeons nos affaires en catastrophe et on se presse dans le couloir menant à la [DZ](/lexique/#dz "Héliport"). Nous sommes appelés 5 par 5, chacun son tour. J'appréhende un peu : c'est la première fois que je prends l'hélicoptère ! On m'appelle enfin. J'enfile mon gilet de sécurité, et je m'installe sur le siège avant. Le conducteur joue les pilotes et négocie un virage serré qui me permet d'apprécier le paysage.
+Je suis prête dès 7h du matin car on peut être appelés à tout moment pour prendre l'hélico. Mais le ciel est très chargé ce matin, et le brouillard nous empêche de voir la base. Impossible pour l'hélico de décoller dans ces conditions ! À 10h, le ciel ne s'est toujours pas dégagé. Un peu désoeuvrés, nous rôdons tous sur le pont, en attendant de nouvelles directives. Mais tout à coup, un signal à la radio : le brouillard est en train de se lever, on va pouvoir partir ! Branle-bas de combat au *PC Sciences* (l'endroit où on peut travailler tranquillement et où on a accès à Internet), nous rangeons nos affaires en catastrophe et on se presse dans le couloir menant à la [DZ](/lexique/#dz "Héliport"). Nous sommes appelés 5 par 5, chacun son tour. J'appréhende un peu : c'est la première fois que je prends l'hélicoptère ! On m'appelle enfin. J'enfile mon gilet de sécurité, et je m'installe sur le siège avant. Le conducteur joue les pilotes et négocie un virage serré qui me permet d'apprécier le paysage.
 
 Arrivés sur l'île, on est accueillis par les "*playmobiles*" (les corvées d'hélico, qui nous ouvrent les portes) et par les [géners](/lexique/#gener "Logisticiens de la base") de la base. La brume s'est levée en altitude mais pas au ras de la mer, et on a l'impression que l'île de l'Est flotte au dessus des nuages.
 
@@ -53,7 +53,7 @@ Une fois arrivés à la colonie, c'est magique ! L'ambiance est unique. Si on me
 
 Les manchots vivent leur vie sans nous accorder la moindre attention. Ils ne semblent être gênés ni par notre présence, ni par les bruits des appareils photos. Nous pouvons nous approcher tellement près !
 
-{{ resize_image(path="mdf/images/crozet/portrait_manchot.jpg", width=1000, height=450, op="fit", author="R. Nespoulet", date="2021", quality=100, title="Nous ne sommes pas dans un documentaire de Natural Geographic")}}
+{{ resize_image(path="mdf/images/crozet/portrait_manchot.jpg", width=1000, height=450, op="fit", author="R. Nespoulet", date="2021", quality=100, title="Nous ne sommes pas dans un documentaire de National Geographic")}}
 
 Nous pouvons même assister à des scènes uniques, comme le nourrissage des jeunes. Les petits manchots sont quasiment deux fois plus gros que les adultes et ne sont pas très beaux dans leur duvet marron. Mais au moins, ça leur tient chaud ! Plus tard, ils perdront ce duvet pendant la période que l'on appelle *la mue* et pourront arborer ensuite ce beau plumage gris, blanc et jaune vif qu'arborent les adultes.
 
