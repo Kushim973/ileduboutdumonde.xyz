@@ -44,7 +44,7 @@ La partie Nord de la caldeira de sa voisine, l'île Saint-Paul, s'étant effondr
  
 Nos deux îles partagent énormément de choses en commun, à commencer par le système volcanique. Situées à la fois sur la dorsale est-indienne, qui sépare la plaque Australienne de la plaque Antarctique, et au niveau d'un point chaud, elles se sont formées il y a environ 100 000 ans. 
 
-Deux épisodes magmatiques successifs ont permit l'édification de ces îles : la construction du paléo-volcan Fernand (dont subsiste aujourd'hui le mont du Fernand, cf [la carte IGN](#carte_ign)), suivi de la formation d'un néo-volcan, à l'origine du cratère de la Dives.
+Deux épisodes magmatiques successifs ont permit l'édification de ces îles : la construction du paléo-volcan Fernand (dont subsiste aujourd'hui le mont du Fernand, cf [la carte IGN](.carte_ign)), suivi de la formation d'un néo-volcan, à l'origine du cratère de la Dives.
 
 Un épisode explosif tardif et une faille transformante, perpendiculaire à la dorsale et passant entre les deux îles, est à l'origine de leur séparation et de l'effondrement d'une bonne partie du cratère de Saint-Paul. En résulte un lac de cratère de plus d'un kilomètre de diamètre et de 80 m de profondeur sur notre petite île inhabitée.
 
