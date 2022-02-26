@@ -44,7 +44,7 @@ Un ensemble de cylindres d'air comprimé servent à la calibration des Picarros,
 
 Ces cylindres contiennent un air standardisé avec un mélange de gaz à la concentration connue. Ils sont à changer plus ou moins régulièrement. Un cylindre neuf peut peser jusqu'à 80kg, et est à manipuler avec une vigilance accrue. 
 
-## EM27 et station météo Raspberry Pi
+## <span id="em27">EM27 et station météo Raspberry Pi</span>
 
 Nouveauté de cette année : je vais devoir installer un nouvel appareil sur Amsterdam, l'**EM27**. C'est un instrument qui vise le soleil et qui analyse le spectre dans toute la colonne d'air. Cette installation est doublement importante : la plupart des mesures de ce type sont réalisées grâce à des instruments embarqués sur satellite. Une mesure au sol permet de valider les mesures satellitaires. Mais aussi, il n'y a que très peu de mesures en hémisphère Sud. L'intérêt d'un site comme l'île d'Amsterdam est sa position d'ilot unique entouré d'océan. L'albédo y est différent que sur un continent et cela a un impact sur les mesures. L'EM27 est installé dans une caisse à roulettes car il est à sortir dès que le soleil pointe le bout de son nez. Il est associé avec une mini station météo supervisée par une Raspberry Pi, qui donne l'heure absolue grâce à la position GPS, la vitesse et la direction du vent, la pression et la température de l'air atmosphérique.
 

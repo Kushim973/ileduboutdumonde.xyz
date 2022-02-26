@@ -39,7 +39,7 @@ Cependant notez que le [Marion](/lexique/#marion "Marion Dufresne II, le navire 
 
 * **OP3** : 29 Octobre 2021
 * **OP4** : 30 Novembre 2021
-* **OP1** : début Mars 2022
+* **OP1** : 14 mars 2022
 * **OP2** : début Août 2022
 * **OP3** : fin Octobre 2022
 
