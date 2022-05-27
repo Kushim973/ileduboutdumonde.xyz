@@ -1,9 +1,6 @@
 {
     "headers": ["name", "author", "date", "titre"],
     "records": [
-    	["/galerie/images/saint_paul.jpg","Bruno Marie","", "Île Saint-Paul"],
-        ["/galerie/images/base.jpg","Yann Bertrand","2018", "Base Saint Martin de Viviès (Amsterdam)"],
-		["/galerie/images/pointe_B.jpg","Yann Bertrand","2018", "Pointe Bénédicte (Amsterdam)"],
 		["/galerie/images/vue_ile_de_lest.jpg","Romane Nespoulet","2021", "Île de l'Est vue de la base Alfred Faure (Crozet)"],
 		["/galerie/images/BDM.jpg","Romane Nespoulet","2021", "Baie du Marin (Crozet)"],
 		["/galerie/images/marion_dans_bdm.jpg","Romane Nespoulet","2021", "Le Marion dans la Baie du Marin (Crozet)"],
@@ -16,6 +13,8 @@
 		["/galerie/images/manchots_royaux.jpg","Romane Nespoulet","2021", "Manchots royaux (Kerguelen)"],
 		["/galerie/images/marion_devant_ker.jpg","Romane Nespoulet","2021", "Marion Dufresne (Kerguelen)"],
 		["/galerie/images/pacha_joyeux.jpg","Romane Nespoulet","2021", "Pacha heureux (Kerguelen)"],
+		["/galerie/images/base.jpg","Romane Nespoulet","2022", "Base Saint Martin de Viviès (Amsterdam)"],
+		["/galerie/images/pointe_B.jpg","Romane Nespoulet","2022", "Pointe Bénédicte (Amsterdam)"],
 		["/galerie/images/otarie_marion.jpg","Romane Nespoulet","2021", "Otarie devant le Marion Dufresne (Amsterdam)"],
 		["/galerie/images/photobomb.jpg","Romane Nespoulet","2021", "Otarie à La Cale (Amsterdam)"],
 		["/galerie/images/geophy.jpg","Romane Nespoulet","2021", "Bâtiment Géophy (Amsterdam)"],
@@ -26,6 +25,7 @@
 		["/galerie/images/fuli_et_son_petit.jpg","Romane Nespoulet","2022", "Albatros fuligineux et son petit (Amsterdam)"],
 		["/galerie/images/alba_bec_jaune.jpg","Romane Nespoulet","2022", "Albatros à bec jaune (Amsterdam)"],
 		["/galerie/images/cabane_coucher_soleil.jpg","Romane Nespoulet","2022", "Cabane d'Entrecasteaux au coucher de soleil (Amsterdam)"],
-		["/galerie/images/bas_falaise.jpg","Romane Nespoulet","2022", "En bas de la Via Ferrata (Amsterdam)"]
+		["/galerie/images/bas_falaise.jpg","Romane Nespoulet","2022", "En bas de la Via Ferrata (Amsterdam)"],
+		["/galerie/images/grande_ravine.jpg","Romane Nespoulet","2022", "Une grande ravine à Del Cano (Amsterdam)"]
     ]
 }

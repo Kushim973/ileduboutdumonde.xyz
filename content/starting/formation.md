@@ -16,7 +16,7 @@ Lundi 20 septembre 2021, c'est mon premier jour au laboratoire. Comme il se situ
 
 Pour commencer, je vois le fonctionnement des Picarros, qui analysent l'air en continu. 
 
-{{ resize_image(path="starting/images/formation/picarros.jpg", width=1000, height=450, op="fit", author="R. Lambert/M. Delmotte", date="2019", quality=100, title="Les Picarros à Amsterdam") }}
+{{ resize_image(path="starting/images/formation/picarros.jpg", width=1000, height=450, op="fit", author="R. Nespoulet", date="2022", quality=100, title="Les Picarros à Amsterdam") }}
 
 
 Je passerai la majorité de mon temps sur la maintenance et le suivi de ces appareils. Il y en a trois sur la station, deux qui mesurent les gaz à effet de serre : **CO2**, **CH4**, **CO**, **H2O** et un qui mesure plus spécifiquement le **N2O**. Les Picarros se basent sur une technique de mesure optique, par absorption infrarouge, un peu comme un *LiCor*. Un laser émet un rayonnement d'une longueur d'onde dans le spectre d'absorption du gaz que l'on veut mesurer. Contrairement au *LiCor* qui mesure une intensité de signal, le Picarro mesure la décroissance du signal au cours d'un long chemin optique. Au bout du compte, le Picarro calcule une concentration du gaz en **ppm** (parties par millions - 0,0404% = 404ppm) grâce à la loi de Beer-Lambert. 
@@ -29,7 +29,7 @@ Un quatrième Picarro est installé sur base, il permet de mesurer les isotopes 
 
 À Pointe B, l'air analysé par les Picarros est prélevé à deux endroits : en haut du mât et sur le toit de la cabane. 
 
-{{ resize_image(path="starting/images/formation/mat_pointe_B.jpg", width=1000, height=450, op="fit" author="R. Lambert/M. Delmotte", date="2019", quality=100, title="Le mât de Pointe Bénédicte et les cloches de prélèvement sur le toit") }}
+{{ resize_image(path="starting/images/formation/mat_pointe_B.jpg", width=1000, height=450, op="fit" author="R. Nespoulet", date="2022", quality=100, title="Le mât de Pointe Bénédicte et les cloches de prélèvement sur le toit") }}
 
 Une pompe dite "*KNF*" gère le flux d'air dans toute la ligne. L'air passe dans un premier temps au travers d'un filtre céramique M&C pour protéger les instruments des particules et autres poussières. Une vanne multi-position, que l'on appelle "*Valco*", permet de gérer séquentiellement les arrivées d'air. Elle permet de passer automatiquement de la ligne de prélèvement de l'air extérieur, à l'air contenu dans les différents cylindres d'air comprimé servant aux calibrations. L'air contenu dans ces cylindres de calibration est géré par un jeu de manomètres dont il faut relever la pression régulièrement.
 Ensuite, l'air prélevé dans l'atmosphère doit être séché avant d'être analysé par le Picarro. Il existe deux méthodes pour débarrasser l'air de la vapeur d'eau : **le piège à eau** et le **Nafion**. Le piège à eau est un bain d'éthanol à environ -40°C et l'eau contenue dans l'air est gelée dans un "piège" en verre qui est changé et séché regulièrement. Le Nafion ne nécessite aucun entretien : c'est un serpentin dans lequel l'air circule en double flux inversé et l'eau est piégée dans une membrane en polymère spécial. Puis, l'air passe au travers du Picarro où il est analysé et mesuré. Une pompe située en aval du Picarro, que l'on appelle "pompe instrument" permet de gérer les flux d'air au sein de la cellule de mesure du Picarro.
@@ -53,6 +53,8 @@ Nouveauté de cette année : je vais devoir installer un nouvel appareil sur Ams
 Le dernier appareil dont j'aurais la charge est celui qui permet la mesure du radon particulaire. Le principe est simple : on aspire de l'air à travers un filtre en papier, le radon particulaire s'y dépose et un photomultiplicateur mesure la décroissance du signal radioactif. En général, le signal est plutôt faible sur l'île d'Amsterdam, mais il peut arriver des évènements ponctuels que l'on appelle **orages radoniques** pendant lesquels on observe une forte augmentation du radon dans l'atmosphère. Ces orages radoniques proviennent des masses d'air arrivant d'Afrique du Sud qui transportent beaucoup de radon issu des activités minières.
 
 ## <span id="prel_manuels">Prélèvements manuels d'air</span>
+
+{{ resize_image(path="starting/images/formation/prelevement_manuel.jpg", width=1000, height=450, op="fit", author="R. Nespoulet", date="2022", quality=100, title="Le dispositif de prélèvement manuel") }}
 
 Pour compléter la mesure en temps réel, des prélèvements manuels sont prévus. Il s'agit d'une bouteille en verre que l'on installe dans une malette conçue spécialement et associée à une pompe. On active ensuite la pompe et après quelques instants d'attente pour purger l'ensemble de la ligne et du système, on met les bouteilles sous pression et on les ferme. Puis, elles sont stockées à l'abri dans des malles en attendant d'être renvoyées en métropole afin d'être analysées. 
 

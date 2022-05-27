@@ -22,7 +22,11 @@
 		["Vie en station","/base/","Bienvenue à Amsterdam !"],
 		["Vie en station","/base/","Mon quotidien sur la base"],
 		["Vie en station","/base/","Newsletter n°1"],
+		["Vie en station","/base/","OP1 !"],
 		["Hors base","/manip/","Manip' à Entrecasteaux"],
-		["Hors base","/manip/","Manip' à Entrecasteaux, ép. II !"]
+		["Hors base","/manip/","Manip' à Entrecasteaux, ép. II !"],
+		["Hors base","/manip/","Tornade log à Del Cano"],
+		["Hors base","/manip/","Tornade log à Entrecasteaux"],
+		["Hors base","/manip/","Prospection Albad'Ams au Plateau des Tourbières"]
     ]
 }
