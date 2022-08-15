@@ -5,7 +5,7 @@ date = 2022-02-15
 
 {{ image_apercu(path="base/images/vie_quotidienne/pte_B.jpg", width=1000, height=250, quality=100) }}
 
-Voici un petit article pour vous raconter mon quotidien sur la base, histoire de vous changer un peu de votre routine de banlieusards parisiens et de vous apporter un peu de soleil austral au coeur de l'hiver ! 
+Voici un petit article pour vous raconter mon quotidien sur la base, histoire de vous apporter un peu de soleil austral au coeur de l'hiver ! 
 
 <!-- more -->
 
