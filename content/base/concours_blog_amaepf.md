@@ -5,7 +5,7 @@ date = 2022-08-10
 
 {{ image_apercu(path="base/images/concours_blog/otarie_couchersoleil.jpg", width=1000, height=250, quality=100) }}
 
-L'Amicale des Missions Australes Et Polaires Françaises ([AMAEPF](https://www.amaepf.fr/)) a pour objectifs de promouvoir la connaissances des régions polaires et subpolaires et de favoriser le lien entre tous les anciens des [TAAF](/lexique/#taaf "Terres Australes et Antarctiques Françaises").
+L'Amicale des Missions Australes Et Polaires Françaises ([AMAEPF](https://www.amaepf.fr/)) a pour objectifs de promouvoir la connaissance des régions polaires et subpolaires et de favoriser le lien entre tous les anciens des [TAAF](/lexique/#taaf "Terres Australes et Antarctiques Françaises").
 
 <!-- more -->
 
